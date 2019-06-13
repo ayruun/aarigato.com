@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderSection/>
     <WelcomeSection/>
+    <ServiceSection/>
   </div>
 </template>
 
 <script>
 import HeaderSection from "./components/HeaderSection.vue";
 import WelcomeSection from "./components/WelcomeSection.vue";
+import ServiceSection from "./components/ServiceSection.vue";
 
 export default {
   name: "app",
   components: {
     HeaderSection,
-    WelcomeSection
+    WelcomeSection,
+    ServiceSection
   }
 };
 </script>
