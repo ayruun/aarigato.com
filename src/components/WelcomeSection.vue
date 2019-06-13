@@ -2,16 +2,16 @@
   <div class="welcome-section">
     <h1>WELCOME TO</h1>
     <h2>AARIGATO</h2>
-    <h3>Have a look at my WebDev Portfolio and have fun playing my games!</h3>
+    <h3>Have a look at my Frontend Portfolio and have fun playing my games!</h3>
   </div>
 </template>
 
 <script>
 export default {
   name: "WelcomeSection",
-  props: {
-    msg: String
-  }
+  //props: {
+  //  msg: String
+  //}
 };
 </script>
 

@@ -1,15 +1,18 @@
 <template>
   <div id="app">
+    <HeaderSection/>
     <WelcomeSection/>
   </div>
 </template>
 
 <script>
+import HeaderSection from "./components/HeaderSection.vue";
 import WelcomeSection from "./components/WelcomeSection.vue";
 
 export default {
   name: "app",
   components: {
+    HeaderSection,
     WelcomeSection
   }
 };
