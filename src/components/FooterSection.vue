@@ -1,7 +1,7 @@
 <template>
     <div class="footer-section">
         <p class="copyright">
-            &copy COPYRIGHT AARIGATO
+            COPYRIGHT AARIGATO
         </p>
         <a href="#" class="impressum">IMPRESSUM</a>
     </div>
