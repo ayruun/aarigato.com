@@ -1,5 +1,11 @@
 # aarigato-single-page-app
 
+## Information about this project
+```
+This is a personal project for excersice purposes.
+The aim of this excercise is to create a single page application, that uses vue components and vanilla css.
+```
+
 ## Project setup
 ```
 npm install
