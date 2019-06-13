@@ -32,7 +32,7 @@ export default {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px; /* TO-DO: dynamischen Wert geben */
+  height: 100vh;
   color: white;
   display: flex;
   flex-direction: row;
@@ -41,8 +41,8 @@ export default {
 }
 
 .portfolio-img {
-  height: auto;
-  width: 500px; /* TO-DO: size */
+  max-height: 60vh;
+  width: auto;
   margin-left: auto;
 }
 

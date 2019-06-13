@@ -54,7 +54,7 @@ export default {
 <style>
 .service-section {
   background-color: white;
-  height: auto; /* TO-DO: change size */
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;

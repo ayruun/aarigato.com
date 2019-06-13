@@ -1,7 +1,7 @@
 <template>
   <div class="contact-section">
     <img
-      src="https://aarigato.de/wp-content/uploads/2019/03/aari_center-al.png"
+      src="https://aarigato.de/wp-content/uploads/2019/03/aari_center.png"
       alt="gato on the roof"
       class="contact-img"
     >
@@ -26,7 +26,7 @@ export default {
 
 <style>
 .contact-section {
-  height: 500px; /* TO-DO: change size */
+  height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -35,8 +35,8 @@ export default {
 }
 
 .contact-img {
-  height: auto;
-  width: 500px;
+  max-height: 60vh;
+  width: auto;
   margin-left: auto;
 }
 

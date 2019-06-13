@@ -2,7 +2,7 @@
   <div class="header-section">
     <header class="header">
       <div class="logo">
-        <a href="https://www.aarigato.de/">
+        <a href="#header-section">
           <img
             class="logo-img"
             src="https://aarigato.de/wp-content/uploads/2019/03/Aarigato_white-01.png"
@@ -14,13 +14,13 @@
       <nav id="nav-bar">
         <ul>
           <li class="nav-li">
-            <a class="nav-links" href="#">PORTFOLIO</a>
+            <a class="nav-links" href="#portfolio-section">PORTFOLIO</a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#">GAMES</a>
+            <a class="nav-links" href="#portfolio-section">GAMES</a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#">CONTACT</a>
+            <a class="nav-links" href="#contact-section">CONTACT</a>
             <!-- TO-DO: links übergeben -->
           </li>
         </ul>

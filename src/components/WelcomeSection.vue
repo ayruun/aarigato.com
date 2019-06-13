@@ -22,7 +22,7 @@ export default {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px; /* TO-DO: dynamischen Wert geben */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
