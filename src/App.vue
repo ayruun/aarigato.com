@@ -4,6 +4,7 @@
     <WelcomeSection/>
     <ServiceSection/>
     <PortfolioSection/>
+    <ContactSection/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderSection from "./components/HeaderSection.vue";
 import WelcomeSection from "./components/WelcomeSection.vue";
 import ServiceSection from "./components/ServiceSection.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
+import ContactSection from "./components/ContactSection.vue";
 
 export default {
   name: "app",
@@ -19,7 +21,8 @@ export default {
     HeaderSection,
     WelcomeSection,
     ServiceSection,
-    PortfolioSection
+    PortfolioSection,
+    ContactSection
   }
 };
 </script>
@@ -40,15 +43,32 @@ export default {
 } */
 
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: var(--accent);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--accent);
 }
 
 #app {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 18px;
+}
+
+.button:hover {
+  background-color: var(--accent-hover);
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
 }
 </style>

@@ -13,7 +13,7 @@
         <br>
         <br>More stuff coming soon!
       </p>
-      <button class="portfolio-btn">
+      <button class="button">
         <a href="#">Interactive Tour</a>
       </button>
     </div>
@@ -33,10 +33,6 @@ export default {
   background-size: cover;
   background-attachment: fixed;
   height: 500px; /* TO-DO: dynamischen Wert geben */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: white;
   display: flex;
   flex-direction: row;
@@ -64,22 +60,5 @@ export default {
 .portfolio-info p {
   font-size: 0.9em;
   max-width: 250px;
-}
-
-.portfolio-btn {
-  text-transform: uppercase;
-  background-color: var(--accent);
-  border: none;
-  border-radius: 6px;
-  padding: 12px 18px;
-}
-
-.portfolio-btn:hover {
-  background-color: var(--accent-hover);
-}
-
-.portfolio-btn a {
-  text-decoration: none;
-  color: white;
 }
 </style>
