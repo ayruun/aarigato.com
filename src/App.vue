@@ -3,6 +3,7 @@
     <HeaderSection/>
     <WelcomeSection/>
     <ServiceSection/>
+    <PortfolioSection/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HeaderSection from "./components/HeaderSection.vue";
 import WelcomeSection from "./components/WelcomeSection.vue";
 import ServiceSection from "./components/ServiceSection.vue";
+import PortfolioSection from "./components/PortfolioSection.vue";
 
 export default {
   name: "app",
   components: {
     HeaderSection,
     WelcomeSection,
-    ServiceSection
+    ServiceSection,
+    PortfolioSection
   }
 };
 </script>
