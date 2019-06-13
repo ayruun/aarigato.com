@@ -74,6 +74,10 @@ export default {
   padding: 12px 18px;
 }
 
+.portfolio-btn:hover {
+  background-color: var(--accent-hover);
+}
+
 .portfolio-btn a {
   text-decoration: none;
   color: white;

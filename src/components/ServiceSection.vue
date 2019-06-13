@@ -90,7 +90,7 @@ export default {
 }
 
 .img-container:hover {
-    background-color: rgb(247, 222, 80);
+    background-color: var(--accent-hover);
 }
 
 .img-container img {

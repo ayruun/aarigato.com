@@ -29,6 +29,7 @@ export default {
   --primary: #222222;
   --secondary: rgb(189, 189, 189);
   --accent: #ffca2f;
+  --accent-hover: rgb(255, 217, 0);
 }
 
 /* Was genau bedeutet das / was macht es?
