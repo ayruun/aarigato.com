@@ -68,7 +68,7 @@ export default {
 .service-box p {
     font-weight: 100;
     font-size: 0.9em;
-    color: rgb(87, 87, 87);
+    color: var(--secondary);
 }
 
 .service-box a {

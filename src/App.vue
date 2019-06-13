@@ -30,7 +30,7 @@ export default {
 <style>
 :root {
   --primary: #222222;
-  --secondary: rgb(189, 189, 189);
+  --secondary: rgb(110, 110, 110);
   --accent: #ffca2f;
   --accent-hover: rgb(255, 217, 0);
 }

@@ -53,5 +53,6 @@ export default {
 .contact-info p {
     font-size: 0.9em;
     max-width: 250px;
+    color: var(--secondary);
 }
 </style>
