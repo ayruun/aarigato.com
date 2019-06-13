@@ -41,7 +41,7 @@ export default {
   position: fixed;
   width: 100%;
   display: grid;
-  grid-template-columns: 5vh auto minmax(600px, 3fr) 5vh;
+  grid-template-columns: 10vh auto minmax(600px, 3fr) 10vh;
 }
 
 .logo {

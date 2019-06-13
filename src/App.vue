@@ -5,6 +5,7 @@
     <ServiceSection/>
     <PortfolioSection/>
     <ContactSection/>
+    <FooterSection/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import WelcomeSection from "./components/WelcomeSection.vue";
 import ServiceSection from "./components/ServiceSection.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import FooterSection from "./components/FooterSection.vue";
 
 export default {
   name: "app",
@@ -22,7 +24,8 @@ export default {
     WelcomeSection,
     ServiceSection,
     PortfolioSection,
-    ContactSection
+    ContactSection,
+    FooterSection
   }
 };
 </script>
