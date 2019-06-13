@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <WelcomeSection/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WelcomeSection from "./components/WelcomeSection.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    WelcomeSection
   }
-}
+};
 </script>
 
 <style>
+:root {
+  --primary: #222222;
+  --secondary: rgb(189, 189, 189);
+  --accent: #ffca2f;
+}
+
+/* Was genau bedeutet das / was macht es?
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--accent);
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
