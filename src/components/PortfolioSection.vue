@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-section">
+  <div class="portfolio-section" id="portfolio-section">
     <img
       src="https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg"
       alt="room in cgi"

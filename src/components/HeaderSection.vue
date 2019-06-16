@@ -1,5 +1,5 @@
 <template>
-  <div class="header-section">
+  <div class="header-section" id="header-section">
     <header class="header">
       <div class="logo">
         <a href="#header-section">
