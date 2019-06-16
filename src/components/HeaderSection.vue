@@ -21,7 +21,7 @@
           </li>
           <li class="nav-li">
             <a class="nav-links" href="#contact-section">CONTACT</a>
-            <!-- TO-DO: links übergeben -->
+            <!-- TODO: links übergeben -->
           </li>
         </ul>
       </nav>
