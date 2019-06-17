@@ -14,10 +14,10 @@
       <nav id="nav-bar">
         <ul>
           <li class="nav-li">
-            <a class="nav-links" href="#portfolio-section">PORTFOLIO</a>
+            <a class="nav-links" href="#portfolio-section" @click="selectPortfolio">PORTFOLIO</a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#portfolio-section">GAMES</a>
+            <a class="nav-links" href="#portfolio-section" @click="selectGames">GAMES</a>
           </li>
           <li class="nav-li">
             <a class="nav-links" href="#contact-section">CONTACT</a>
@@ -30,7 +30,15 @@
 
 <script>
 export default {
-  name: "HeaderSection"
+  name: "HeaderSection",
+  methods: {
+    selectPortfolio() {
+      this.$emit("select-portfolio");
+    },
+    selectGames() {
+      this.$emit("select-games")
+    }
+  }
 };
 </script>
 

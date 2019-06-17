@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <HeaderSection/>
+    <HeaderSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab"/>
     <WelcomeSection/>
     <ServiceSection/>
-    <PortfolioSection/>
+    <PortfolioSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab" ref="portfolioSection"/>
     <ContactSection/>
     <FooterSection/>
   </div>
@@ -26,6 +26,18 @@ export default {
     PortfolioSection,
     ContactSection,
     FooterSection
+  },
+  methods: {
+    selectPortfolioTab() {
+      if (this.$refs.portfolioSection.selectedTab === "games") {
+        this.$refs.portfolioSection.selectPortfolio();
+      }
+    },
+    selectGamesTab() {
+      if (this.$refs.portfolioSection.selectedTab === "portfolio") {
+        this.$refs.portfolioSection.selectGames();
+      }
+    }
   }
 };
 </script>

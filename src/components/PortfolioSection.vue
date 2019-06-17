@@ -2,9 +2,14 @@
   <div class="portfolio-section" id="portfolio-section">
     <ContentSlider :tab="this.selectedTab"/>
     <div class="slider-tabs">
-      <a href="#portfolio-section" id="portfolio-tab" ref="portfolioTab" @click="selectPortfolio">PORTFOLIO</a>
+      <a
+        href="#portfolio-section"
+        id="portfolio-tab"
+        ref="portfolioTab"
+        @click="emitPortfolio"
+      >PORTFOLIO</a>
       <p>//</p>
-      <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="selectGames">GAMES</a>
+      <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="emitGames">GAMES</a>
     </div>
   </div>
 </template>
@@ -36,6 +41,12 @@ export default {
         this.$refs.gamesTab.style.color = "white";
         this.$refs.portfolioTab.style.color = "grey";
       }
+    },
+    emitGames() {
+      this.$emit("select-games");
+    },
+    emitPortfolio() {
+        this.$emit("select-portfolio");
     }
   }
 };
