@@ -1,7 +1,7 @@
 <template>
   <div class="content-slider">
     <ul class="content-slider-wrap" ref="ul">
-      <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item"></ContentSliderSlide>
+      <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item" />
     </ul>
     <a id="prev" href="#portfolio-section" @click="prevSlide">
       <i class="material-icons">keyboard_arrow_left</i>
@@ -58,6 +58,7 @@ export default {
   position: relative;
   width: 100%;
   height: 80vh;
+  padding-top: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

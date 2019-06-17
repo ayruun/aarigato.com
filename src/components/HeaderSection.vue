@@ -39,6 +39,7 @@ export default {
 .header {
   background: var(--primary);
   position: fixed;
+  z-index: 999;
   width: 100%;
   display: grid;
   grid-template-columns: 10vh auto minmax(600px, 3fr) 10vh;
