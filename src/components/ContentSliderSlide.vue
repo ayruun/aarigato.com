@@ -1,20 +1,17 @@
 <template>
   <li class="content-slider-slide">
     <img
-      src="https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg"
-      alt="room in cgi"
+      :src="slide.imgSrc"
+      :alt="slide.imgAlt"
       class="portfolio-img"
     >
     <div class="portfolio-info">
-      <h4>Interior Design</h4>
+      <h4>{{ slide.headline }}</h4>
       <p>
-        Modelling and rendering in Cinema4D.
-        <br>Personal work.
-        <br>
-        <br>More stuff coming soon!
+        {{ slide.infoText }}
       </p>
       <button class="button">
-        <a href="#">Interactive Tour</a>
+        <a :href="slide.buttonLink">{{ slide.buttonText }}</a>
       </button>
     </div>
   </li>
@@ -22,7 +19,13 @@
 
 <script>
 export default {
-  name: "ContentSliderSlide"
+  name: "ContentSliderSlide",
+  props: {
+    slide: {
+      type: Object,
+      required: true
+    }
+  }
 };
 </script>
 

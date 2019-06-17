@@ -1,7 +1,7 @@
 <template>
   <div class="content-slider">
     <ul class="content-slider-wrap" ref="ul">
-      <ContentSliderSlide/>
+      <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item"></ContentSliderSlide>
     </ul>
     <a id="prev" href="#portfolio-section" @click="prevSlide">&#8810;</a>
     <a id="next" href="#portfolio-section" @click="nextSlide">&#8811;</a>
@@ -10,15 +10,23 @@
 
 <script>
 import ContentSliderSlide from "./ContentSliderSlide";
+import json from "../assets/portfolio-slider-content.json";
 
 export default {
   name: "ContentSlider",
   components: {
     ContentSliderSlide
   },
+  data() {
+      return {
+          myJson: json,
+          items: json.items
+      }
+  },
   methods: {
     nextSlide() {
       this.$refs.ul.style.left = "-100vw"; /* calculate value */
+      console.log(this.items);
     },
     prevSlide() {
       this.$refs.ul.style.left = "0"; /* calculate value */

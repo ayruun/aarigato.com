@@ -1,24 +1,24 @@
 {
     "items": [
         {
-            "id": "1",
+            "id": "0",
             "name": "interior-design",
-            "img-src": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
-            "img-alt": "room in cgi",
+            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgAlt": "room in cgi",
             "headline": "Interior Design",
-            "info-text": "Modelling and rendering in Cinema4D.<br>Personal work.<br><br>More stuff coming soon!",
-            "button-link": "#portfolio-section",
-            "button-text": "Interactive Tour"
+            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
+            "buttonLink": "#portfolio-section",
+            "buttonText": "Interactive Tour"
         },
         {
-            "id": "2",
+            "id": "1",
             "name": "knife-designs",
-            "img-src": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
-            "img-alt": "knife designs",
+            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgAlt": "knife designs",
             "headline": "Knife Designs",
-            "info-text": "Modelling and rendering in Cinema4D.<br>Personal work.<br><br>More stuff coming soon!",
-            "button-link": "#portfolio-section",
-            "button-text": "See in action"
+            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
+            "buttonLink": "#portfolio-section",
+            "buttonText": "See in action"
         }
     ]
 }
