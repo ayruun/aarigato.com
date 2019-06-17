@@ -1,7 +1,10 @@
 <template>
   <div class="content-slider">
-    <ul class="content-slider-wrap" ref="ul">
-      <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item" />
+    <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'portfolio'">
+      <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item"/>
+    </ul>
+    <ul class="content-slider-wrap" ref="ul" v-else-if="this.tab === 'games'">
+      <ContentSliderSlide v-for="item in games" :key="item.id" :slide="item"/>
     </ul>
     <a id="prev" href="#portfolio-section" @click="prevSlide">
       <i class="material-icons">keyboard_arrow_left</i>
@@ -21,9 +24,16 @@ export default {
   components: {
     ContentSliderSlide
   },
+  props: {
+    tab: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       items: json.items,
+      games: json.games,
       slideCount: 0
     };
   },
@@ -31,7 +41,15 @@ export default {
     nextSlide() {
       if (this.slideCount == 0) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
-      } else if (this.slideCount < this.items.length - 1) {
+      } else if (
+        this.tab === "portfolio" &&
+        this.slideCount < this.items.length - 1
+      ) {
+        this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
+      } else if (
+        this.tab === "games" &&
+        this.slideCount < this.games.length - 1
+      ) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else {
         this.$refs.ul.style.left = 0;

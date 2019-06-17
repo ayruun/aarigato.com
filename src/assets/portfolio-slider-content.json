@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "id": "0",
+            "id": "p0",
             "name": "interior-design",
             "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
             "imgAlt": "room in cgi",
@@ -11,7 +11,7 @@
             "buttonText": "Interactive Tour"
         },
         {
-            "id": "1",
+            "id": "p1",
             "name": "knife-designs",
             "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
             "imgAlt": "knife designs",
@@ -21,7 +21,7 @@
             "buttonText": "See in action"
         },
         {
-            "id": "2",
+            "id": "p2",
             "name": "test-designs",
             "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
             "imgAlt": "test designs",
@@ -29,6 +29,28 @@
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
             "buttonLink": "#portfolio-section",
             "buttonText": "Test action"
+        }
+    ],
+    "games": [
+        {
+            "id": "g0",
+            "name": "interior-design",
+            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgAlt": "room in cgi",
+            "headline": "GAME TEST",
+            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
+            "buttonLink": "#portfolio-section",
+            "buttonText": "Interactive Tour"
+        },
+        {
+            "id": "g1",
+            "name": "knife-designs",
+            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgAlt": "knife designs",
+            "headline": "GAME TEST",
+            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
+            "buttonLink": "#portfolio-section",
+            "buttonText": "See in action"
         }
     ]
 }

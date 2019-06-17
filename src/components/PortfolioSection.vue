@@ -1,6 +1,11 @@
 <template>
   <div class="portfolio-section" id="portfolio-section">
-    <ContentSlider/>
+    <ContentSlider :tab="this.selectedTab"/>
+    <div class="slider-tabs">
+      <a href="#portfolio-section" id="portfolio-tab" ref="portfolioTab" @click="selectPortfolio">PORTFOLIO</a>
+      <p>//</p>
+      <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="selectGames">GAMES</a>
+    </div>
   </div>
 </template>
 
@@ -11,6 +16,27 @@ export default {
   name: "PortfolioSection",
   components: {
     ContentSlider
+  },
+  data() {
+    return {
+      selectedTab: "portfolio"
+    };
+  },
+  methods: {
+    selectPortfolio() {
+      if (this.selectedTab === "games") {
+        this.selectedTab = "portfolio";
+        this.$refs.portfolioTab.style.color = "white";
+        this.$refs.gamesTab.style.color = "grey";
+      }
+    },
+    selectGames() {
+      if (this.selectedTab === "portfolio") {
+        this.selectedTab = "games";
+        this.$refs.gamesTab.style.color = "white";
+        this.$refs.portfolioTab.style.color = "grey";
+      }
+    }
   }
 };
 </script>
@@ -24,8 +50,28 @@ export default {
   height: 100vh;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.slider-tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-tabs a,
+.slider-tabs p {
+  text-decoration: none;
+  color: white;
+  margin: 0 1em;
+}
+
+#portfolio-tab {
+  color: white;
+}
+
+#games-tab {
+  color: grey;
 }
 </style>
