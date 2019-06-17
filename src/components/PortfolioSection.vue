@@ -1,28 +1,17 @@
 <template>
   <div class="portfolio-section" id="portfolio-section">
-    <img
-      src="https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg"
-      alt="room in cgi"
-      class="portfolio-img"
-    >
-    <div class="portfolio-info">
-      <h4>Interior Design</h4>
-      <p>
-        Modelling and rendering in Cinema4D.
-        <br>Personal work.
-        <br>
-        <br>More stuff coming soon!
-      </p>
-      <button class="button">
-        <a href="#">Interactive Tour</a>
-      </button>
-    </div>
+    <ContentSlider/>
   </div>
 </template>
 
 <script>
+import ContentSlider from "./ContentSlider.vue";
+
 export default {
-  name: "PortfolioSection"
+  name: "PortfolioSection",
+  components: {
+    ContentSlider
+  }
 };
 </script>
 
@@ -38,27 +27,5 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.portfolio-img {
-  max-height: 60vh;
-  width: auto;
-  margin-left: auto;
-}
-
-.portfolio-info {
-  text-align: left;
-  margin-left: 50px;
-  margin-right: auto;
-}
-
-.portfolio-info h4 {
-  font-size: 1.5em;
-  margin-top: 0;
-}
-
-.portfolio-info p {
-  font-size: 0.9em;
-  max-width: 250px;
 }
 </style>

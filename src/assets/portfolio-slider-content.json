@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "name": "interior-design",
+            "content": {
+                "img-src": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+                "img-alt": "room in cgi",
+                "headline": "Interior Design",
+                "info-text": "Modelling and rendering in Cinema4D.<br>Personal work.<br><br>More stuff coming soon!",
+                "button-link": "#portfolio-section",
+                "button-text": "Interactive Tour"
+            }
+        },
+        {
+            "id": "2",
+            "name": "knife-designs",
+            "content": {
+                "img-src": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+                "img-alt": "knife designs",
+                "headline": "Knife Designs",
+                "info-text": "Modelling and rendering in Cinema4D.<br>Personal work.<br><br>More stuff coming soon!",
+                "button-link": "#portfolio-section",
+                "button-text": "See in action"
+            }
+        }
+    ]
+}
