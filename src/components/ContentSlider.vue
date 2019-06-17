@@ -19,8 +19,6 @@ export default {
   methods: {
     nextSlide() {
       this.$refs.ul.style.left = "-100vw"; /* calculate value */
-      // eslint-disable-next-line no-console
-      console.log(this.slides);
     },
     prevSlide() {
       this.$refs.ul.style.left = "0"; /* calculate value */
