@@ -18,18 +18,26 @@ export default {
     ContentSliderSlide
   },
   data() {
-      return {
-          myJson: json,
-          items: json.items
-      }
+    return {
+      items: json.items,
+      slideCount: 0
+    };
   },
   methods: {
     nextSlide() {
-      this.$refs.ul.style.left = "-100vw"; /* calculate value */
-      console.log(this.items);
+      if (this.$refs.ul.style.left == 0) {
+        this.$refs.ul.style.left = `-${this.slideCount += 1}00vw`;
+      }
+      else if (this.slideCount < this.items.length - 1) {
+        this.$refs.ul.style.left = `-${this.slideCount += 1}00vw`;
+      }
+      else {
+        this.$refs.ul.style.left = 0;
+        this.slideCount = 0;
+      }
     },
     prevSlide() {
-      this.$refs.ul.style.left = "0"; /* calculate value */
+      this.$refs.ul.style.left = "0"; // calculate value
     }
   }
 };
@@ -58,7 +66,7 @@ export default {
   justify-content: flex-start;
   align-items: center;
   transition: all 750ms ease;
-  left: 0; /* diesen wert in js verändern */
+  left: -000vw; /* diesen wert in js verändern */
 }
 
 #prev,

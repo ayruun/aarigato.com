@@ -19,6 +19,16 @@
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
             "buttonLink": "#portfolio-section",
             "buttonText": "See in action"
+        },
+        {
+            "id": "2",
+            "name": "test-designs",
+            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgAlt": "test designs",
+            "headline": "Test Designs",
+            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
+            "buttonLink": "#portfolio-section",
+            "buttonText": "Test action"
         }
     ]
 }
