@@ -3,8 +3,12 @@
     <ul class="content-slider-wrap" ref="ul">
       <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item"></ContentSliderSlide>
     </ul>
-    <a id="prev" href="#portfolio-section" @click="prevSlide">&#8810;</a>
-    <a id="next" href="#portfolio-section" @click="nextSlide">&#8811;</a>
+    <a id="prev" href="#portfolio-section" @click="prevSlide">
+      <i class="material-icons">keyboard_arrow_left</i>
+    </a>
+    <a id="next" href="#portfolio-section" @click="nextSlide">
+      <i class="material-icons">keyboard_arrow_right</i>
+    </a>
   </div>
 </template>
 
@@ -25,19 +29,25 @@ export default {
   },
   methods: {
     nextSlide() {
-      if (this.$refs.ul.style.left == 0) {
-        this.$refs.ul.style.left = `-${this.slideCount += 1}00vw`;
-      }
-      else if (this.slideCount < this.items.length - 1) {
-        this.$refs.ul.style.left = `-${this.slideCount += 1}00vw`;
-      }
-      else {
+      if (this.slideCount == 0) {
+        this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
+      } else if (this.slideCount < this.items.length - 1) {
+        this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
+      } else {
         this.$refs.ul.style.left = 0;
         this.slideCount = 0;
       }
     },
     prevSlide() {
-      this.$refs.ul.style.left = "0"; // calculate value
+      if (this.slideCount == 0) {
+        this.slideCount = this.items.length - 1;
+        this.$refs.ul.style.left = `-${this.slideCount}00vw`;
+      } else if (this.slideCount > 1) {
+        this.$refs.ul.style.left = `-${(this.slideCount -= 1)}00vw`;
+      } else {
+        this.$refs.ul.style.left = 0;
+        this.slideCount = 0;
+      }
     }
   }
 };
