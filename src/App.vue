@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab"/>
     <WelcomeSection/>
-    <ServiceSection/>
+    <ServiceSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab"/>
     <PortfolioSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab" ref="portfolioSection"/>
     <ContactSection/>
     <FooterSection/>
