@@ -1,15 +1,15 @@
 <template>
   <div class="portfolio-section" id="portfolio-section">
-    <ContentSlider :tab="this.selectedTab"/>
+    <ContentSlider :tab="this.tab"/>
     <div class="slider-tabs">
       <a
         href="#portfolio-section"
         id="portfolio-tab"
         ref="portfolioTab"
-        @click="emitPortfolio"
+        @click="selectPortfolio"
       >PORTFOLIO</a>
       <p>//</p>
-      <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="emitGames">GAMES</a>
+      <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="selectGames">GAMES</a>
     </div>
   </div>
 </template>
@@ -22,31 +22,18 @@ export default {
   components: {
     ContentSlider
   },
-  data() {
-    return {
-      selectedTab: "portfolio"
-    };
+  props: {
+    tab: {
+      type: String,
+      required: true
+    }
   },
   methods: {
-    selectPortfolio() {
-      if (this.selectedTab === "games") {
-        this.selectedTab = "portfolio";
-        this.$refs.portfolioTab.style.color = "white";
-        this.$refs.gamesTab.style.color = "grey";
-      }
-    },
     selectGames() {
-      if (this.selectedTab === "portfolio") {
-        this.selectedTab = "games";
-        this.$refs.gamesTab.style.color = "white";
-        this.$refs.portfolioTab.style.color = "grey";
-      }
-    },
-    emitGames() {
       this.$emit("select-games");
     },
-    emitPortfolio() {
-        this.$emit("select-portfolio");
+    selectPortfolio() {
+      this.$emit("select-portfolio");
     }
   }
 };

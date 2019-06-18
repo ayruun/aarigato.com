@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <HeaderSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab"/>
+    <HeaderSection @select-portfolio="selectPortfolio" @select-games="selectGames"/>
     <WelcomeSection/>
-    <ServiceSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab"/>
-    <PortfolioSection @select-portfolio="selectPortfolioTab" @select-games="selectGamesTab" ref="portfolioSection"/>
+    <ServiceSection @select-portfolio="selectPortfolio" @select-games="selectGames"/>
+    <PortfolioSection @select-portfolio="selectPortfolio" @select-games="selectGames" ref="portfolioSection" :tab="selectedTab"/>
     <ContactSection/>
     <FooterSection/>
   </div>
@@ -27,15 +27,24 @@ export default {
     ContactSection,
     FooterSection
   },
+  data() {
+    return {
+      selectedTab: "portfolio"
+    };
+  },
   methods: {
-    selectPortfolioTab() {
-      if (this.$refs.portfolioSection.selectedTab === "games") {
-        this.$refs.portfolioSection.selectPortfolio();
+    selectPortfolio() {
+      if (this.selectedTab === "games") {
+        this.selectedTab = "portfolio";
+        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
+        this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
       }
     },
-    selectGamesTab() {
-      if (this.$refs.portfolioSection.selectedTab === "portfolio") {
-        this.$refs.portfolioSection.selectGames();
+    selectGames() {
+      if (this.selectedTab === "portfolio") {
+        this.selectedTab = "games";
+        this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
+        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
       }
     }
   }
