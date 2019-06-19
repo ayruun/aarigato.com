@@ -1,7 +1,7 @@
 <template>
   <div class="content-slider">
     <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'portfolio'">
-      <ContentSliderSlide v-for="item in items" :key="item.id" :slide="item"/>
+      <ContentSliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
     </ul>
     <ul class="content-slider-wrap" ref="ul" v-else-if="this.tab === 'games'">
       <ContentSliderSlide v-for="item in games" :key="item.id" :slide="item"/>
@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      items: json.items,
+      apps: json.apps,
       games: json.games,
       slideCount: 0
     };
