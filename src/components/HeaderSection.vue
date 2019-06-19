@@ -11,6 +11,7 @@
         </a>
       </div>
 
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav id="nav-bar">
         <ul>
           <li class="nav-li">
@@ -24,6 +25,9 @@
           </li>
         </ul>
       </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
     </header>
   </div>
 </template>
@@ -36,7 +40,7 @@ export default {
       this.$emit("select-portfolio");
     },
     selectGames() {
-      this.$emit("select-games")
+      this.$emit("select-games");
     }
   }
 };
@@ -49,7 +53,7 @@ export default {
   z-index: 999;
   width: 100%;
   display: grid;
-  grid-template-columns: 10vh auto minmax(600px, 3fr) 10vh;
+  grid-template-columns: 10vh auto 3fr 10vh;
 }
 
 .logo {
@@ -61,6 +65,10 @@ export default {
 .logo img {
   width: 100%;
   height: auto;
+}
+
+.nav-toggle {
+  display: none;
 }
 
 #nav-bar {
@@ -106,5 +114,90 @@ export default {
 
 #nav-bar a:hover::before {
   transform: scale(0.5, 1);
+}
+
+/* media query für mittlere Größen hier hin */
+
+@media (max-width: 700px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+
+  #nav-bar {
+    position: relative;
+    top: 100%;
+    justify-content: center;
+    text-align: right;
+    right: 0;
+    background-color: var(--primary);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  #nav-bar li {
+    margin: 0;
+    padding-top: 7px;
+  }
+
+  #nav-bar a::before {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    grid-column: 3 / 4;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    bottom: 7px;
+  }
+
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+
+  /* ~ looks for any preceeding sibling */
+  .nav-toggle:checked ~ #nav-bar {
+    transform: scale(1, 1);
+  }
 }
 </style>
