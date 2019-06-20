@@ -9,13 +9,9 @@
 <script>
 export default {
   name: "WelcomeSection",
-  //props: {
-  //  msg: String
-  //}
 };
 </script>
 
-<!-- Add "scoped" attribute to the style tag to limit CSS to this component only -->
 <style scoped>
 .welcome-section {
   background: url(https://aarigato.de/wp-content/uploads/2019/03/background_center.png);
@@ -46,6 +42,6 @@ h2 {
 h3 {
   font-size: 0.8em;
   font-weight: 100;
-  margin: 0;
+  margin: 0 20px;
 }
 </style>
