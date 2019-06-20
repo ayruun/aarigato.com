@@ -144,6 +144,10 @@ export default {
     width: 100%;
   }
 
+  .slider-btns {
+    margin-bottom: 30px;
+  }
+
   #prev,
   #next {
     position: static;
