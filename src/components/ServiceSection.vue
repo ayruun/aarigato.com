@@ -1,5 +1,5 @@
 <template>
-  <div class="service-section">
+  <div class="service-section" id="service-section" ref="service">
     <div class="service-box" id="box-1">
       <a href="#portfolio-section" @click="selectPortfolio">
         <div class="img-container">

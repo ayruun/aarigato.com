@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <HeaderSection @select-portfolio="selectPortfolio" @select-games="selectGames"/>
-    <WelcomeSection/>
-    <ServiceSection @select-portfolio="selectPortfolio" @select-games="selectGames"/>
+    <WelcomeSection @scroll-down="scrollToMiddle"/>
+    <ServiceSection @select-portfolio="selectPortfolio" @select-games="selectGames" ref="serviceSection"/>
     <PortfolioSection @select-portfolio="selectPortfolio" @select-games="selectGames" ref="portfolioSection" :tab="selectedTab"/>
     <ContactSection/>
     <FooterSection/>
@@ -46,6 +46,13 @@ export default {
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
         this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
       }
+    },
+    scrollToMiddle() {
+      this.$refs.serviceSection.$refs.service.scrollIntoView({
+            behavior: 'auto',
+            block: 'center',
+            inline: 'center'
+        });
     }
   }
 };
@@ -71,6 +78,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--accent);
+  scroll-behavior: smooth;
 }
 
 #app {
