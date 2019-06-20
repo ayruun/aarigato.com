@@ -1,9 +1,23 @@
 <template>
   <div id="app">
-    <HeaderSection @select-portfolio="selectPortfolio" @select-games="selectGames"/>
+    <HeaderSection
+      @select-portfolio="selectPortfolio"
+      @select-games="selectGames"
+      @select-contact="selectContact"
+      ref="headerSection"
+    />
     <WelcomeSection @scroll-down="scrollToMiddle"/>
-    <ServiceSection @select-portfolio="selectPortfolio" @select-games="selectGames" ref="serviceSection"/>
-    <PortfolioSection @select-portfolio="selectPortfolio" @select-games="selectGames" ref="portfolioSection" :tab="selectedTab"/>
+    <ServiceSection
+      @select-portfolio="selectPortfolio"
+      @select-games="selectGames"
+      ref="serviceSection"
+    />
+    <PortfolioSection
+      @select-portfolio="selectPortfolio"
+      @select-games="selectGames"
+      ref="portfolioSection"
+      :tab="selectedTab"
+    />
     <ContactSection/>
     <FooterSection/>
   </div>
@@ -38,6 +52,9 @@ export default {
         this.selectedTab = "portfolio";
         this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
+        if (this.$refs.headerSection.$refs.checkbox.checked) {
+          this.$refs.headerSection.$refs.checkbox.checked = false;
+        }
       }
     },
     selectGames() {
@@ -45,14 +62,22 @@ export default {
         this.selectedTab = "games";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
         this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
+        if (this.$refs.headerSection.$refs.checkbox.checked) {
+          this.$refs.headerSection.$refs.checkbox.checked = false;
+        }
+      }
+    },
+    selectContact() {
+      if (this.$refs.headerSection.$refs.checkbox.checked) {
+        this.$refs.headerSection.$refs.checkbox.checked = false;
       }
     },
     scrollToMiddle() {
       this.$refs.serviceSection.$refs.service.scrollIntoView({
-            behavior: 'auto',
-            block: 'center',
-            inline: 'center'
-        });
+        behavior: "auto",
+        block: "center",
+        inline: "center"
+      });
     }
   }
 };

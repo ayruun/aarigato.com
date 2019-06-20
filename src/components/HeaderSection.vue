@@ -11,7 +11,7 @@
         </a>
       </div>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" ref="checkbox" v-click-outside="closeMenu">
       <nav id="nav-bar">
         <ul>
           <li class="nav-li">
@@ -21,7 +21,7 @@
             <a class="nav-links" href="#portfolio-section" @click="selectGames">GAMES</a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#contact-section">CONTACT</a>
+            <a class="nav-links" href="#contact-section" @click="selectContact">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -41,6 +41,12 @@ export default {
     },
     selectGames() {
       this.$emit("select-games");
+    },
+    selectContact() {
+      this.$emit("select-contact");
+    },
+    closeMenu() {
+      this.$refs.checkbox.checked = false;
     }
   }
 };
@@ -115,8 +121,6 @@ export default {
 #nav-bar a:hover::before {
   transform: scale(0.5, 1);
 }
-
-/* media query für evtl. mittlere Größen hier hin */
 
 @media (max-width: 700px) {
   .header {
