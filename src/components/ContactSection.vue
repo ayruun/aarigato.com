@@ -70,6 +70,8 @@ export default {
 
   .contact-info {
     margin: 25px;
+    align-content: center;
+    text-align: center;
   }
 
   .contact-info p {

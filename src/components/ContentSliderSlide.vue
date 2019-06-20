@@ -1,15 +1,9 @@
 <template>
   <li class="content-slider-slide">
-    <img
-      :src="slide.imgSrc"
-      :alt="slide.imgAlt"
-      class="portfolio-img"
-    >
+    <img :src="slide.imgSrc" :alt="slide.imgAlt" class="portfolio-img">
     <div class="portfolio-info">
       <h4>{{ slide.headline }}</h4>
-      <p>
-        {{ slide.infoText }}
-      </p>
+      <p>{{ slide.infoText }}</p>
       <button class="button">
         <a :href="slide.buttonLink">{{ slide.buttonText }}</a>
       </button>
@@ -31,7 +25,6 @@ export default {
 
 <style>
 .content-slider-slide {
-  width: 100%;
   color: white;
   display: flex;
   flex-direction: row;
@@ -39,19 +32,18 @@ export default {
   align-items: center;
   position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 100%;
 }
 
 .portfolio-img {
   max-height: 60vh;
-  width: auto;
-  margin-left: auto;
+  max-width: 90vw;
+  margin-left: 50px;
 }
 
 .portfolio-info {
   text-align: left;
-  margin-left: 50px;
-  margin-right: auto;
+  margin: 0 50px;
 }
 
 .portfolio-info h4 {
@@ -63,4 +55,23 @@ export default {
   font-size: 0.9em;
   max-width: 250px;
 }
+
+@media (max-width: 680px) {
+  .content-slider-slide {
+    flex-direction: column; 
+  }
+
+  .portfolio-img {
+    max-height: 50vh;
+    margin: 0 50px;
+  }
+
+  .portfolio-info {
+    margin-top: 20px;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+
 </style>
