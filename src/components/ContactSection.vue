@@ -37,12 +37,12 @@ export default {
 .contact-img {
   max-height: 60vh;
   width: auto;
-  margin-left: auto;
+  margin-left: 50px;
 }
 
 .contact-info {
   text-align: left;
-  margin: 0 auto 0 50px;
+  margin: 0 50px;
 }
 
 .contact-info h4 {
@@ -54,5 +54,26 @@ export default {
     font-size: 0.9em;
     max-width: 250px;
     color: var(--secondary);
+}
+
+@media (max-width: 800px) {
+  .contact-section {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    max-height: 45vh;
+    max-width: 90vw;
+    margin: 100px 25px 0 25px;
+  }
+
+  .contact-info {
+    margin: 25px;
+  }
+
+  .contact-info p {
+    max-width: 500px;
+  }
 }
 </style>
