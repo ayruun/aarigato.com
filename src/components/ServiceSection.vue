@@ -102,4 +102,19 @@ export default {
   width: 50%;
   height: auto;
 }
+
+@media (max-width: 595px) {
+  .service-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .service-box {
+    margin: 20px 0;
+  }
+
+  #box-2 {
+    margin: 0;
+  }
+}
 </style>

@@ -116,7 +116,7 @@ export default {
   transform: scale(0.5, 1);
 }
 
-/* media query für mittlere Größen hier hin */
+/* media query für evtl. mittlere Größen hier hin */
 
 @media (max-width: 700px) {
   .header {
