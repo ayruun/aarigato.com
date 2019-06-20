@@ -43,7 +43,7 @@ export default {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else if (
         this.tab === "portfolio" &&
-        this.slideCount < this.items.length - 1
+        this.slideCount < this.apps.length - 1
       ) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else if (
@@ -57,8 +57,11 @@ export default {
       }
     },
     prevSlide() {
-      if (this.slideCount == 0) {
-        this.slideCount = this.items.length - 1;
+      if (this.slideCount == 0 && this.tab === "portfolio") {
+        this.slideCount = this.apps.length - 1;
+        this.$refs.ul.style.left = `-${this.slideCount}00vw`;
+      } else if(this.slideCount == 0 && this.tab === "games") {
+        this.slideCount = this.games.length - 1;
         this.$refs.ul.style.left = `-${this.slideCount}00vw`;
       } else if (this.slideCount > 1) {
         this.$refs.ul.style.left = `-${(this.slideCount -= 1)}00vw`;

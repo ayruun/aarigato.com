@@ -37,7 +37,7 @@
             "name": "interior-design",
             "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
             "imgAlt": "room in cgi",
-            "headline": "GAME TEST",
+            "headline": "GAME TEST 1",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
             "buttonLink": "#portfolio-section",
             "buttonText": "Interactive Tour"
@@ -47,7 +47,17 @@
             "name": "knife-designs",
             "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
             "imgAlt": "knife designs",
-            "headline": "GAME TEST",
+            "headline": "GAME TEST 2",
+            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
+            "buttonLink": "#portfolio-section",
+            "buttonText": "See in action"
+        },
+        {
+            "id": "g3",
+            "name": "knife-designs",
+            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgAlt": "knife designs",
+            "headline": "GAME TEST 3",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
             "buttonLink": "#portfolio-section",
             "buttonText": "See in action"
