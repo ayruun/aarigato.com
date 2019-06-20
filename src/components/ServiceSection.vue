@@ -103,7 +103,7 @@ export default {
   height: auto;
 }
 
-@media (max-width: 595px) {
+@media (max-width: 633px) {
   .service-section {
     flex-direction: column;
     height: auto;
