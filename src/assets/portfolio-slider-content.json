@@ -2,8 +2,7 @@
     "apps": [
         {
             "id": "p0",
-            "name": "interior-design",
-            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgSrc": "interior-design.jpg",
             "imgAlt": "room in cgi",
             "headline": "Interior Design",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
@@ -12,8 +11,7 @@
         },
         {
             "id": "p1",
-            "name": "knife-designs",
-            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgSrc": "interior-design.jpg",
             "imgAlt": "knife designs",
             "headline": "Knife Designs",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
@@ -22,8 +20,7 @@
         },
         {
             "id": "p2",
-            "name": "test-designs",
-            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgSrc": "interior-design.jpg",
             "imgAlt": "test designs",
             "headline": "Test Designs",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
@@ -34,8 +31,7 @@
     "games": [
         {
             "id": "g0",
-            "name": "interior-design",
-            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgSrc": "interior-design.jpg",
             "imgAlt": "room in cgi",
             "headline": "GAME TEST 1",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
@@ -44,8 +40,7 @@
         },
         {
             "id": "g1",
-            "name": "knife-designs",
-            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgSrc": "interior-design.jpg",
             "imgAlt": "knife designs",
             "headline": "GAME TEST 2",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
@@ -54,8 +49,7 @@
         },
         {
             "id": "g3",
-            "name": "knife-designs",
-            "imgSrc": "https://aarigato.de/wp-content/uploads/2019/03/Tills-Bude-16jpg.jpg",
+            "imgSrc": "interior-design.jpg",
             "imgAlt": "knife designs",
             "headline": "GAME TEST 3",
             "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",

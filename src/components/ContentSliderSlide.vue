@@ -1,6 +1,6 @@
 <template>
   <li class="content-slider-slide">
-    <img :src="slide.imgSrc" :alt="slide.imgAlt" class="portfolio-img">
+    <img :src="require(`@/assets/images/${slide.imgSrc}`)" :alt="slide.imgAlt" class="portfolio-img">
     <div class="portfolio-info">
       <h4>{{ slide.headline }}</h4>
       <p>{{ slide.infoText }}</p>
@@ -72,6 +72,4 @@ export default {
     text-align: center;
   }
 }
-
-
 </style>

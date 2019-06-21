@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .welcome-section {
-  background: url(https://aarigato.de/wp-content/uploads/2019/03/background_center.png);
+  background: url("../assets/images/background.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
