@@ -52,9 +52,9 @@ export default {
         this.selectedTab = "portfolio";
         this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
-        if (this.$refs.headerSection.$refs.checkbox.checked) {
-          this.$refs.headerSection.$refs.checkbox.checked = false;
-        }
+      }
+      if (this.$refs.headerSection.isActive) {
+        this.$refs.headerSection.isActive = false;
       }
     },
     selectGames() {
@@ -62,14 +62,14 @@ export default {
         this.selectedTab = "games";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
         this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
-        if (this.$refs.headerSection.$refs.checkbox.checked) {
-          this.$refs.headerSection.$refs.checkbox.checked = false;
-        }
+      }
+      if (this.$refs.headerSection.isActive) {
+        this.$refs.headerSection.isActive = false;
       }
     },
     selectContact() {
-      if (this.$refs.headerSection.$refs.checkbox.checked) {
-        this.$refs.headerSection.$refs.checkbox.checked = false;
+      if (this.$refs.headerSection.isActive) {
+        this.$refs.headerSection.isActive = false;
       }
     },
     scrollToMiddle() {

@@ -11,8 +11,11 @@
         </a>
       </div>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" ref="checkbox" v-click-outside="closeMenu">
-      <nav id="nav-bar">
+      <div class="burger-menu" @click="toggleMenu" v-click-outside="closeMenu">
+        <span></span>
+      </div>
+
+      <nav class="nav-bar" v-bind:class="{ active: isActive }">
         <ul>
           <li class="nav-li">
             <a class="nav-links" href="#portfolio-section" @click="selectPortfolio">PORTFOLIO</a>
@@ -25,9 +28,6 @@
           </li>
         </ul>
       </nav>
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-      </label>
     </header>
   </div>
 </template>
@@ -35,7 +35,18 @@
 <script>
 export default {
   name: "HeaderSection",
+  data() {
+    return {
+      isActive: false
+    };
+  },
   methods: {
+    toggleMenu() {
+      this.isActive ? (this.isActive = false) : (this.isActive = true);
+    },
+    closeMenu() {
+        this.isActive = false;
+    },
     selectPortfolio() {
       this.$emit("select-portfolio");
     },
@@ -44,9 +55,6 @@ export default {
     },
     selectContact() {
       this.$emit("select-contact");
-    },
-    closeMenu() {
-      this.$refs.checkbox.checked = false;
     }
   }
 };
@@ -59,7 +67,7 @@ export default {
   z-index: 999;
   width: 100%;
   display: grid;
-  grid-template-columns: 10vh auto 3fr 10vh;
+  grid-template-columns: 10vh auto 1fr 10vh;
 }
 
 .logo {
@@ -73,11 +81,7 @@ export default {
   height: auto;
 }
 
-.nav-toggle {
-  display: none;
-}
-
-#nav-bar {
+.nav-bar {
   grid-column: 3 / 4;
   display: flex;
   justify-content: flex-end;
@@ -85,27 +89,27 @@ export default {
   font-size: 0.9em;
 }
 
-#nav-bar li {
+.nav-bar li {
   list-style: none;
   margin: 0 15px;
 }
 
-#nav-bar ul {
+.nav-bar ul {
   display: flex;
   margin: 0;
 }
 
-#nav-bar a {
+.nav-bar a {
   text-decoration: none;
   color: white;
   position: relative;
 }
 
-#nav-bar a:hover {
+.nav-bar a:hover {
   color: var(--secondary);
 }
 
-#nav-bar a::before {
+.nav-bar a::before {
   content: "";
   display: block;
   height: 2px;
@@ -118,65 +122,57 @@ export default {
   transition: transform ease-in-out 150ms;
 }
 
-#nav-bar a:hover::before {
+.nav-bar a:hover::before {
   transform: scale(0.5, 1);
 }
 
+.burger-menu {
+  display: none;
+}
+
 @media (max-width: 700px) {
-  .header {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .logo {
-    grid-column: 2 / 3;
-    justify-self: center;
-  }
-
-  #nav-bar {
-    position: relative;
-    top: 100%;
-    justify-content: center;
+  .nav-bar {
+    display: none;
     text-align: right;
-    right: 0;
-    background-color: var(--primary);
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 200ms ease-in-out;
   }
 
-  #nav-bar ul {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-
-  #nav-bar li {
-    margin: 0;
-    padding-top: 7px;
-  }
-
-  #nav-bar a::before {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .nav-toggle-label {
-    grid-column: 3 / 4;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
+  .active {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar li {
+    margin: 0 0 15px 0;
+  }
+
+  .nav-bar a::before {
+    left: 0;
+    right: 1;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform ease-in-out 150ms;
+  }
+
+  .nav-bar a:hover::before {
+    transform: scale(0.5, 1);
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 3 / 4;
+    color: white;
+    cursor: pointer;
+  }
+
+  .burger-menu span,
+  .burger-menu span::before,
+  .burger-menu span::after {
     display: block;
     background: white;
     height: 2px;
@@ -185,23 +181,18 @@ export default {
     position: relative;
   }
 
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
+  .burger-menu span::before,
+  .burger-menu span::after {
     content: "";
     position: absolute;
   }
 
-  .nav-toggle-label span::before {
+  .burger-menu span::before {
     bottom: 7px;
   }
 
-  .nav-toggle-label span::after {
+  .burger-menu span::after {
     top: 7px;
-  }
-
-  /* ~ looks for any preceeding sibling */
-  .nav-toggle:checked ~ #nav-bar {
-    transform: scale(1, 1);
   }
 }
 </style>
