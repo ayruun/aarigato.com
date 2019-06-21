@@ -6,12 +6,14 @@
     <ul class="content-slider-wrap" ref="ul" v-else-if="this.tab === 'games'">
       <ContentSliderSlide v-for="item in games" :key="item.id" :slide="item"/>
     </ul>
-    <a id="prev" href="#portfolio-section" @click="prevSlide">
-      <i class="material-icons">keyboard_arrow_left</i>
-    </a>
-    <a id="next" href="#portfolio-section" @click="nextSlide">
-      <i class="material-icons">keyboard_arrow_right</i>
-    </a>
+    <div class="slider-btns">
+      <a id="prev" href="#portfolio-section" @click="prevSlide">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </a>
+      <a id="next" href="#portfolio-section" @click="nextSlide">
+        <i class="material-icons">keyboard_arrow_right</i>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -43,7 +45,7 @@ export default {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else if (
         this.tab === "portfolio" &&
-        this.slideCount < this.items.length - 1
+        this.slideCount < this.apps.length - 1
       ) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else if (
@@ -57,8 +59,11 @@ export default {
       }
     },
     prevSlide() {
-      if (this.slideCount == 0) {
-        this.slideCount = this.items.length - 1;
+      if (this.slideCount == 0 && this.tab === "portfolio") {
+        this.slideCount = this.apps.length - 1;
+        this.$refs.ul.style.left = `-${this.slideCount}00vw`;
+      } else if (this.slideCount == 0 && this.tab === "games") {
+        this.slideCount = this.games.length - 1;
         this.$refs.ul.style.left = `-${this.slideCount}00vw`;
       } else if (this.slideCount > 1) {
         this.$refs.ul.style.left = `-${(this.slideCount -= 1)}00vw`;
@@ -113,10 +118,43 @@ export default {
   transform: translateY(-50%);
   transition: all 150ms ease;
 }
+
 #prev {
   left: 10px;
 }
 #next {
   right: 10px;
+}
+
+@media (max-width: 1160px) {
+  #prev {
+    left: 3px;
+  }
+  #next {
+    right: 3px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .content-slider {
+    flex-direction: column;
+  }
+
+  .content-slider-wrap {
+    width: 100%;
+  }
+
+  .slider-btns {
+    margin-bottom: 30px;
+  }
+
+  #prev,
+  #next {
+    position: static;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    margin: 10px 20px;
+  }
 }
 </style>

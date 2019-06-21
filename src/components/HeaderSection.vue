@@ -11,7 +11,11 @@
         </a>
       </div>
 
-      <nav id="nav-bar">
+      <div class="burger-menu" @click="toggleMenu" v-click-outside="closeMenu">
+        <span></span>
+      </div>
+
+      <nav class="nav-bar" v-bind:class="{ active: isActive }">
         <ul>
           <li class="nav-li">
             <a class="nav-links" href="#portfolio-section" @click="selectPortfolio">PORTFOLIO</a>
@@ -20,7 +24,7 @@
             <a class="nav-links" href="#portfolio-section" @click="selectGames">GAMES</a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#contact-section">CONTACT</a>
+            <a class="nav-links" href="#contact-section" @click="selectContact">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -31,12 +35,26 @@
 <script>
 export default {
   name: "HeaderSection",
+  data() {
+    return {
+      isActive: false
+    };
+  },
   methods: {
+    toggleMenu() {
+      this.isActive ? (this.isActive = false) : (this.isActive = true);
+    },
+    closeMenu() {
+        this.isActive = false;
+    },
     selectPortfolio() {
       this.$emit("select-portfolio");
     },
     selectGames() {
-      this.$emit("select-games")
+      this.$emit("select-games");
+    },
+    selectContact() {
+      this.$emit("select-contact");
     }
   }
 };
@@ -49,7 +67,7 @@ export default {
   z-index: 999;
   width: 100%;
   display: grid;
-  grid-template-columns: 10vh auto minmax(600px, 3fr) 10vh;
+  grid-template-columns: 10vh auto 1fr 10vh;
 }
 
 .logo {
@@ -63,7 +81,7 @@ export default {
   height: auto;
 }
 
-#nav-bar {
+.nav-bar {
   grid-column: 3 / 4;
   display: flex;
   justify-content: flex-end;
@@ -71,27 +89,27 @@ export default {
   font-size: 0.9em;
 }
 
-#nav-bar li {
+.nav-bar li {
   list-style: none;
   margin: 0 15px;
 }
 
-#nav-bar ul {
+.nav-bar ul {
   display: flex;
   margin: 0;
 }
 
-#nav-bar a {
+.nav-bar a {
   text-decoration: none;
   color: white;
   position: relative;
 }
 
-#nav-bar a:hover {
+.nav-bar a:hover {
   color: var(--secondary);
 }
 
-#nav-bar a::before {
+.nav-bar a::before {
   content: "";
   display: block;
   height: 2px;
@@ -104,7 +122,77 @@ export default {
   transition: transform ease-in-out 150ms;
 }
 
-#nav-bar a:hover::before {
+.nav-bar a:hover::before {
   transform: scale(0.5, 1);
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-bar {
+    display: none;
+    text-align: right;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar li {
+    margin: 0 0 15px 0;
+  }
+
+  .nav-bar a::before {
+    left: 0;
+    right: 1;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform ease-in-out 150ms;
+  }
+
+  .nav-bar a:hover::before {
+    transform: scale(0.5, 1);
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 3 / 4;
+    color: white;
+    cursor: pointer;
+  }
+
+  .burger-menu span,
+  .burger-menu span::before,
+  .burger-menu span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .burger-menu span::before,
+  .burger-menu span::after {
+    content: "";
+    position: absolute;
+  }
+
+  .burger-menu span::before {
+    bottom: 7px;
+  }
+
+  .burger-menu span::after {
+    top: 7px;
+  }
 }
 </style>

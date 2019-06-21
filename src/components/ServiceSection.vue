@@ -1,5 +1,5 @@
 <template>
-  <div class="service-section">
+  <div class="service-section" id="service-section" ref="service">
     <div class="service-box" id="box-1">
       <a href="#portfolio-section" @click="selectPortfolio">
         <div class="img-container">
@@ -101,5 +101,20 @@ export default {
 .img-container img {
   width: 50%;
   height: auto;
+}
+
+@media (max-width: 633px) {
+  .service-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .service-box {
+    margin: 20px 0;
+  }
+
+  #box-2 {
+    margin: 0;
+  }
 }
 </style>

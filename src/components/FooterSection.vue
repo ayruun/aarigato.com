@@ -41,4 +41,11 @@ export default {
     .impressum:hover {
         color: var(--secondary);
     }
+
+    @media (max-width: 595px) {
+        .footer-section {
+            grid-template-columns: 5vh auto auto 5vh;
+            font-size: 0.7em;
+        }
+    }
 </style>
