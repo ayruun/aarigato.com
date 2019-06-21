@@ -6,6 +6,7 @@
       @select-contact="selectContact"
       ref="headerSection"
     />
+    <!-- <router-view></router-view> -->
     <WelcomeSection @scroll-down="scrollToMiddle"/>
     <ServiceSection
       @select-portfolio="selectPortfolio"
