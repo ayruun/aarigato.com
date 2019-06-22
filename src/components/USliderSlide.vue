@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "ContentSliderSlide",
+  name: "USliderSlide",
   props: {
     slide: {
       type: Object,

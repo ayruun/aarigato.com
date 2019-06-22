@@ -1,10 +1,10 @@
 <template>
   <div class="content-slider">
     <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'portfolio'">
-      <ContentSliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
+      <USliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
     </ul>
-    <ul class="content-slider-wrap" ref="ul" v-else-if="this.tab === 'games'">
-      <ContentSliderSlide v-for="item in games" :key="item.id" :slide="item"/>
+    <ul class="content-slider-wrap" ref="ul" v-else>
+      <USliderSlide v-for="item in games" :key="item.id" :slide="item"/>
     </ul>
     <div class="slider-btns">
       <a id="prev" href="#portfolio-section" @click="prevSlide">
@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import ContentSliderSlide from "./ContentSliderSlide";
-import json from "../assets/portfolio-slider-content.json";
+import USliderSlide from "./USliderSlide";
+import { games, apps } from "../assets/portfolio-slider-content.json";
 
 export default {
-  name: "ContentSlider",
+  name: "USlider",
   components: {
-    ContentSliderSlide
+    USliderSlide
   },
   props: {
     tab: {
@@ -34,8 +34,8 @@ export default {
   },
   data() {
     return {
-      apps: json.apps,
-      games: json.games,
+      apps,
+      games,
       slideCount: 0
     };
   },
