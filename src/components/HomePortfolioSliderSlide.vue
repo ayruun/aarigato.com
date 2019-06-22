@@ -5,7 +5,8 @@
       <h4>{{ slide.headline }}</h4>
       <p>{{ slide.infoText }}</p>
       <button class="button">
-        <a :href="slide.buttonLink">{{ slide.buttonText }}</a>
+        <!-- <a :href="slide.buttonLink">{{ slide.buttonText }}</a> -->
+        <router-link :to="slide.buttonLink">{{ slide.buttonText }}</router-link>
       </button>
     </div>
   </li>
@@ -13,7 +14,7 @@
 
 <script>
 export default {
-  name: "USliderSlide",
+  name: "HomePortfolioSliderSlide",
   props: {
     slide: {
       type: Object,

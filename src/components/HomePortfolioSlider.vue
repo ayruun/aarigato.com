@@ -1,10 +1,10 @@
 <template>
   <div class="content-slider">
     <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'portfolio'">
-      <USliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
+      <HomePortfolioSliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
     </ul>
     <ul class="content-slider-wrap" ref="ul" v-else>
-      <USliderSlide v-for="item in games" :key="item.id" :slide="item"/>
+      <HomePortfolioSliderSlide v-for="item in games" :key="item.id" :slide="item"/>
     </ul>
     <div class="slider-btns">
       <a id="prev" href="#portfolio-section" @click="prevSlide">
@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import USliderSlide from "./USliderSlide";
+import HomePortfolioSliderSlide from "./HomePortfolioSliderSlide";
 import { games, apps } from "../assets/portfolio-slider-content.json";
 
 export default {
-  name: "USlider",
+  name: "HomePortfolioSlider",
   components: {
-    USliderSlide
+    HomePortfolioSliderSlide
   },
   props: {
     tab: {

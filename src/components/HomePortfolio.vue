@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-section" id="portfolio-section">
-    <USlider :tab="this.tab"/>
+    <HomePortfolioSlider :tab="this.tab"/>
     <div class="slider-tabs">
       <a
         href="#portfolio-section"
@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import USlider from "./USlider.vue";
+import HomePortfolioSlider from "./HomePortfolioSlider.vue";
 
 export default {
   name: "HomePortfolio",
   components: {
-    USlider
+    HomePortfolioSlider
   },
   props: {
     tab: {
