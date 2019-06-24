@@ -1,7 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import router from './router';
+import App from './App.vue';
 
 Vue.config.productionTip = false
+
 
 // directive by https://stackoverflow.com/a/42389266/11459992
 Vue.directive('click-outside', {
@@ -19,5 +21,7 @@ Vue.directive('click-outside', {
 });
 
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
+

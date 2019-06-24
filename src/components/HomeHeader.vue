@@ -5,7 +5,7 @@
         <a href="#header-section">
           <img
             class="logo-img"
-            src="https://aarigato.de/wp-content/uploads/2019/03/Aarigato_white-01.png"
+            src="../assets/logo.png"
             alt="aarigato logo"
           >
         </a>

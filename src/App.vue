@@ -1,85 +1,12 @@
 <template>
   <div id="app">
-    <HeaderSection
-      @select-portfolio="selectPortfolio"
-      @select-games="selectGames"
-      @select-contact="selectContact"
-      ref="headerSection"
-    />
-    <WelcomeSection @scroll-down="scrollToMiddle"/>
-    <ServiceSection
-      @select-portfolio="selectPortfolio"
-      @select-games="selectGames"
-      ref="serviceSection"
-    />
-    <PortfolioSection
-      @select-portfolio="selectPortfolio"
-      @select-games="selectGames"
-      ref="portfolioSection"
-      :tab="selectedTab"
-    />
-    <ContactSection/>
-    <FooterSection/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HeaderSection from "./components/HeaderSection.vue";
-import WelcomeSection from "./components/WelcomeSection.vue";
-import ServiceSection from "./components/ServiceSection.vue";
-import PortfolioSection from "./components/PortfolioSection.vue";
-import ContactSection from "./components/ContactSection.vue";
-import FooterSection from "./components/FooterSection.vue";
-
 export default {
-  name: "app",
-  components: {
-    HeaderSection,
-    WelcomeSection,
-    ServiceSection,
-    PortfolioSection,
-    ContactSection,
-    FooterSection
-  },
-  data() {
-    return {
-      selectedTab: "portfolio"
-    };
-  },
-  methods: {
-    selectPortfolio() {
-      if (this.selectedTab === "games") {
-        this.selectedTab = "portfolio";
-        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
-        this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
-      }
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
-      }
-    },
-    selectGames() {
-      if (this.selectedTab === "portfolio") {
-        this.selectedTab = "games";
-        this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
-        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
-      }
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
-      }
-    },
-    selectContact() {
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
-      }
-    },
-    scrollToMiddle() {
-      this.$refs.serviceSection.$refs.service.scrollIntoView({
-        behavior: "auto",
-        block: "center",
-        inline: "center"
-      });
-    }
-  }
+  
 };
 </script>
 
@@ -110,22 +37,5 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
-}
-
-.button {
-  text-transform: uppercase;
-  background-color: var(--accent);
-  border: none;
-  border-radius: 6px;
-  padding: 12px 18px;
-}
-
-.button:hover {
-  background-color: var(--accent-hover);
-}
-
-.button a {
-  text-decoration: none;
-  color: white;
 }
 </style>

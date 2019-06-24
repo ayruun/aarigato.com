@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-section" id="portfolio-section">
-    <ContentSlider :tab="this.tab"/>
+    <HomePortfolioSlider :tab="this.tab"/>
     <div class="slider-tabs">
       <a
         href="#portfolio-section"
@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import ContentSlider from "./ContentSlider.vue";
+import HomePortfolioSlider from "./HomePortfolioSlider.vue";
 
 export default {
-  name: "PortfolioSection",
+  name: "HomePortfolio",
   components: {
-    ContentSlider
+    HomePortfolioSlider
   },
   props: {
     tab: {
@@ -41,7 +41,7 @@ export default {
 
 <style>
 .portfolio-section {
-  background: url(https://aarigato.de/wp-content/uploads/2019/03/background_center.png);
+  background: url("../assets/images/background.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

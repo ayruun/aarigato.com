@@ -3,7 +3,7 @@
     <div class="service-box" id="box-1">
       <a href="#portfolio-section" @click="selectPortfolio">
         <div class="img-container">
-          <img src="https://aarigato.de/wp-content/uploads/2019/03/3d.png" alt="apps icon">
+          <img src="../assets/icons/apps.png" alt="apps icon">
         </div>
       </a>
       <div class="service-content">
@@ -16,7 +16,7 @@
     <div class="service-box" id="box-2">
       <a href="#portfolio-section" @click="selectGames">
         <div class="img-container">
-          <img src="https://aarigato.de/wp-content/uploads/2019/03/controller.png" alt="games icon">
+          <img src="../assets/icons/controller.png" alt="games icon">
         </div>
       </a>
       <div class="service-content">
@@ -29,7 +29,7 @@
     <div class="service-box" id="box-3">
       <a href="#contact-section">
         <div class="img-container">
-          <img src="https://aarigato.de/wp-content/uploads/2019/03/mail.png" alt="contact icon">
+          <img src="../assets/icons/mail.png" alt="contact icon">
         </div>
       </a>
       <div class="service-content">

@@ -1,11 +1,11 @@
 <template>
   <li class="content-slider-slide">
-    <img :src="slide.imgSrc" :alt="slide.imgAlt" class="portfolio-img">
+    <img :src="require(`@/assets/images/${slide.imgSrc}`)" :alt="slide.imgAlt" class="portfolio-img">
     <div class="portfolio-info">
       <h4>{{ slide.headline }}</h4>
       <p>{{ slide.infoText }}</p>
       <button class="button">
-        <a :href="slide.buttonLink">{{ slide.buttonText }}</a>
+        <router-link :to="slide.buttonLink">{{ slide.buttonText }}</router-link>
       </button>
     </div>
   </li>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "ContentSliderSlide",
+  name: "HomePortfolioSliderSlide",
   props: {
     slide: {
       type: Object,
@@ -72,6 +72,4 @@ export default {
     text-align: center;
   }
 }
-
-
 </style>

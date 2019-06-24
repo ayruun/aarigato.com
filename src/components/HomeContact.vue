@@ -1,7 +1,7 @@
 <template>
   <div class="contact-section" id="contact-section">
     <img
-      src="https://aarigato.de/wp-content/uploads/2019/03/aari_center.png"
+      src="../assets/images/portrait.png"
       alt="gato on the roof"
       class="contact-img"
     >
