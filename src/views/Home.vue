@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HomeHeader
+    <UHeader
       @select-portfolio="selectPortfolio"
       @select-games="selectGames"
       @select-contact="selectContact"
@@ -19,27 +19,24 @@
       :tab="selectedTab"
     />
     <HomeContact/>
-    <HomeFooter/>
   </div>
 </template>
 
 <script>
-import HomeHeader from "../components/HomeHeader.vue";
+import UHeader from "../components/UHeader.vue";
 import HomeStage from "../components/HomeStage.vue";
 import HomeService from "../components/HomeService.vue";
 import HomePortfolio from "../components/HomePortfolio.vue";
 import HomeContact from "../components/HomeContact.vue";
-import HomeFooter from "../components/HomeFooter.vue";
 
 export default {
-  name: "app",
+  name: "home",
   components: {
-    HomeHeader,
+    UHeader,
     HomeStage,
     HomeService,
     HomePortfolio,
     HomeContact,
-    HomeFooter
   },
   data() {
     return {
@@ -48,7 +45,7 @@ export default {
   },
   methods: {
     selectPortfolio() {
-      if (this.selectedTab === "games") {
+       if (this.selectedTab === "games") {
         this.selectedTab = "portfolio";
         this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";

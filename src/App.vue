@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view/>
+    <UFooter/>
   </div>
 </template>
 
 <script>
+import UFooter from './components/UFooter.vue';
+
 export default {
-  
+  name: "home",
+  components: {
+    UFooter
+  }
 };
 </script>
 
@@ -16,6 +22,7 @@ export default {
   --secondary: rgb(110, 110, 110);
   --accent: #ffca2f;
   --accent-hover: rgb(255, 217, 0);
+  scroll-behavior: smooth;
 }
 
 /* Was genau bedeutet das / was macht es?
@@ -30,7 +37,6 @@ body {
   margin: 0;
   padding: 0;
   background: var(--accent);
-  scroll-behavior: smooth;
 }
 
 #app {

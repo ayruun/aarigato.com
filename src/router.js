@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import PortfolioProject from './views/PortfolioProject.vue';
 import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
+import Impressum from './views/Impressum.vue';
 
 import { games, apps } from "./assets/portfolio-slider-content.json";
 
@@ -34,10 +35,20 @@ const routes = [
         }
       }
     ]
-  }
+  },
+  { path: '/impressum', component: Impressum }
 ];
 
 export default new VueRouter({
   mode: 'history',
-  routes // eigentlich routes: routes,
+  routes, // eigentlich routes: routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+        return savedPosition;
+    }
+    if (to.hash) {
+        return { selector: to.hash };
+    }
+    return { x: 0, y: 0 };
+}
 });
