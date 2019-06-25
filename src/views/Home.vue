@@ -1,72 +1,56 @@
 <template>
   <div>
-    <UHeader
-      @select-portfolio="selectPortfolio"
-      @select-games="selectGames"
-      @select-contact="selectContact"
-      ref="headerSection"
-    />
     <HomeStage @scroll-down="scrollToMiddle"/>
     <HomeService
-      @select-portfolio="selectPortfolio"
+      @select-apps="selectApps"
       @select-games="selectGames"
       ref="HomeService"
     />
     <HomePortfolio
-      @select-portfolio="selectPortfolio"
+      @select-apps="selectApps"
       @select-games="selectGames"
       ref="portfolioSection"
       :tab="selectedTab"
     />
     <HomeContact/>
+    <HomeAbout/>
   </div>
 </template>
 
 <script>
-import UHeader from "../components/UHeader.vue";
 import HomeStage from "../components/HomeStage.vue";
 import HomeService from "../components/HomeService.vue";
 import HomePortfolio from "../components/HomePortfolio.vue";
+import HomeAbout from "../components/HomeAbout.vue";
 import HomeContact from "../components/HomeContact.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
-    UHeader,
     HomeStage,
     HomeService,
     HomePortfolio,
     HomeContact,
+    HomeAbout
   },
   data() {
     return {
-      selectedTab: "portfolio"
+      selectedTab: "apps"
     };
   },
   methods: {
-    selectPortfolio() {
+    selectApps() {
        if (this.selectedTab === "games") {
-        this.selectedTab = "portfolio";
-        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
+        this.selectedTab = "apps";
+        this.$refs.portfolioSection.$refs.appsTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
-      }
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
       }
     },
     selectGames() {
-      if (this.selectedTab === "portfolio") {
+      if (this.selectedTab === "apps") {
         this.selectedTab = "games";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
-        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
-      }
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
-      }
-    },
-    selectContact() {
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
+        this.$refs.portfolioSection.$refs.appsTab.style.color = "grey";
       }
     },
     scrollToMiddle() {

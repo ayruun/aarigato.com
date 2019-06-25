@@ -1,81 +1,66 @@
 <template>
-  <div class="contact-section" id="contact-section">
-    <img
-      src="../assets/images/portrait.png"
-      alt="gato on the roof"
-      class="contact-img"
-    >
-    <div class="contact-info">
-      <h4>MOIN MOIN I'M AARON</h4>
-      <p>
-        I am a visual generalist whose specialty is working in 3 dimensions, always with one eye on the brand and the other one on the purpose of the design. I love good briefings and working conceptually and like to keep key elements in focus when others get stuck on details.
-        <br><br>Get in touch:
-      </p>
-      <button class="button">
-        <a href="mailto:aarigato@icloud.com">SEND MAIL</a>
-      </button>
+  <div class="home-contact" id="home-contact">
+    <div class="service-box" id="contact-1">
+      <a href="#">
+        <div class="img-container">
+          <img src="../assets/icons/apps.png" alt="apps icon">
+        </div>
+      </a>
+      <div class="service-content">
+        <h3>
+          <a href="#">GitHub</a>
+        </h3>
+        <p>Check out this Website and more.</p>
+      </div>
+    </div>
+    <div class="service-box" id="contact-2">
+      <a href="#">
+        <div class="img-container">
+          <img src="../assets/icons/controller.png" alt="games icon">
+        </div>
+      </a>
+      <div class="service-content">
+        <h3>
+          <a href="#">LinkedIn</a>
+        </h3>
+        <p>Feel free to contact me via LinkedIn.</p>
+      </div>
+    </div>
+    <div class="service-box" id="contact-3">
+      <a href="#">
+        <div class="img-container">
+          <img src="../assets/icons/mail.png" alt="contact icon">
+        </div>
+      </a>
+      <div class="service-content">
+        <h3>
+          <a href="#">CodeCamp</a>
+        </h3>
+        <p>Have a look at my CodeCamp Profile.</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "ContactSection"
+  name: "HomeContact"
 };
 </script>
 
 <style>
-.contact-section {
-  height: 100vh;
+.home-contact {
   background-color: white;
+  height: 50vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.contact-img {
-  max-height: 60vh;
-  width: auto;
-  margin-left: 50px;
-}
-
-.contact-info {
-  text-align: left;
-  margin: 0 50px;
-}
-
-.contact-info h4 {
-  font-size: 1.5em;
-  margin-top: 0;
-}
-
-.contact-info p {
-    font-size: 0.9em;
-    max-width: 250px;
-    color: var(--secondary);
-}
-
-@media (max-width: 800px) {
-  .contact-section {
-    position: relative;
+@media (max-width: 633px) {
+  .home-contact {
     flex-direction: column;
-  }
-
-  .contact-img {
-    max-height: 45vh;
-    max-width: 90vw;
-    margin: 100px 25px 0 25px;
-  }
-
-  .contact-info {
-    margin: 25px;
-    align-content: center;
-    text-align: center;
-  }
-
-  .contact-info p {
-    max-width: 500px;
+    height: auto;
   }
 }
 </style>

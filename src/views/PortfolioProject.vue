@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "portfolioProject",
+  name: "PortfolioProject",
   props: {
     project: {
       type: String,

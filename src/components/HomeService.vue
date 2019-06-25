@@ -1,14 +1,14 @@
 <template>
   <div class="service-section" id="service-section" ref="service">
     <div class="service-box" id="box-1">
-      <a href="#portfolio-section" @click="selectPortfolio">
+      <a href="#portfolio-section" @click="selectApps">
         <div class="img-container">
           <img src="../assets/icons/apps.png" alt="apps icon">
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#portfolio-section" @click="selectPortfolio">APPS</a>
+          <a href="#portfolio-section" @click="selectApps">APPS</a>
         </h3>
         <p>Portfolio is coming soon.</p>
       </div>
@@ -44,10 +44,10 @@
 
 <script>
 export default {
-  name: "ServiceSection",
+  name: "HomeService",
   methods: {
-    selectPortfolio() {
-      this.$emit("select-portfolio");
+    selectApps() {
+      this.$emit("select-apps");
     },
     selectGames() {
       this.$emit("select-games");

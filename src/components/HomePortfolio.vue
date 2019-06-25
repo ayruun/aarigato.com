@@ -4,10 +4,10 @@
     <div class="slider-tabs">
       <a
         href="#portfolio-section"
-        id="portfolio-tab"
-        ref="portfolioTab"
-        @click="selectPortfolio"
-      >PORTFOLIO</a>
+        id="apps-tab"
+        ref="appsTab"
+        @click="selectApps"
+      >APPS</a>
       <p>//</p>
       <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="selectGames">GAMES</a>
     </div>
@@ -32,8 +32,8 @@ export default {
     selectGames() {
       this.$emit("select-games");
     },
-    selectPortfolio() {
-      this.$emit("select-portfolio");
+    selectApps() {
+      this.$emit("select-apps");
     }
   }
 };
@@ -65,7 +65,7 @@ export default {
   margin: 0 1em;
 }
 
-#portfolio-tab {
+#apps-tab {
   color: white;
 }
 

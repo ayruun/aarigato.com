@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "WelcomeSection",
+  name: "HomeStage",
   methods: {
     scrollDown() {
       this.$emit("scroll-down");

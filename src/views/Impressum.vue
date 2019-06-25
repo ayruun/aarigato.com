@@ -1,6 +1,5 @@
 <template>
   <div class="impressum-view" id="impressum-view">
-    <UHeader/>
     <div class="impressum-container">
       <div class="impressum-content"><p>Impressum</p></div>
     </div>
@@ -8,13 +7,8 @@
 </template>
 
 <script>
-import UHeader from "../components/UHeader.vue";
-
 export default {
   name: "Impressum",
-  components: {
-    UHeader
-  }
 };
 </script>
 

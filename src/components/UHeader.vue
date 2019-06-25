@@ -1,8 +1,8 @@
 <template>
-  <div class="header-section" id="header-section">
+  <div class="u-header" id="u-header">
     <header class="header">
       <div class="logo">
-        <router-link :to="{ path: '/', hash: '#header-section' }">
+        <router-link :to="{ path: '/', hash: '#u-header' }">
           <img class="logo-img" src="../assets/logo.png" alt="aarigato logo">
         </router-link>
       </div>
@@ -15,17 +15,17 @@
         <ul>
           <li class="nav-li">
             <router-link :to="{ path: '/', hash: '#portfolio-section' }" class="nav-links">
-              <span @click="selectPortfolio">PORTFOLIO</span>
+              <span>PORTFOLIO</span>
             </router-link>
           </li>
           <li class="nav-li">
-            <router-link :to="{ path: '/', hash: '#portfolio-section' }" class="nav-links">
-              <span @click="selectGames">GAMES</span>
+            <router-link :to="{ path: '/', hash: '#home-contact' }" class="nav-links">
+              <span>CONTACT</span>
             </router-link>
           </li>
           <li class="nav-li">
-            <router-link :to="{ path: '/', hash: '#contact-section' }" class="nav-links">
-              <span @click="selectContact">CONTACT</span>
+            <router-link :to="{ path: '/', hash: '#home-about' }" class="nav-links">
+              <span>ABOUT</span>
             </router-link>
           </li>
         </ul>
@@ -48,15 +48,6 @@ export default {
     },
     closeMenu() {
       this.isActive = false;
-    },
-    selectPortfolio() {
-      this.$emit("select-portfolio");
-    },
-    selectGames() {
-      this.$emit("select-games");
-    },
-    selectContact() {
-      this.$emit("select-contact");
     }
   }
 };

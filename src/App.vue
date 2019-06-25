@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <UHeader/>
     <router-view/>
     <UFooter/>
   </div>
 </template>
 
 <script>
-import UFooter from './components/UFooter.vue';
+import UHeader from "./components/UHeader.vue";
+import UFooter from "./components/UFooter.vue";
 
 export default {
   name: "home",
   components: {
+    UHeader,
     UFooter
   }
 };
