@@ -1,8 +1,6 @@
 <template>
     <div class="portfolio-orange-blossom">
-        <div class="i-frame">
-            Orange Blossom
-        </div>
+        <iframe class="iframe" src="https://www.aarigato.de/OrangeBlossomV1.1/" frameborder="0"></iframe>
     </div>
 </template>
 
@@ -20,11 +18,5 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .i-frame {
-        width: 50vw;
-        height: 50vh;
-        background: var(--secondary);
     }
 </style>
