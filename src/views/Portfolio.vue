@@ -1,7 +1,6 @@
 <template>
-    <div class="portfolio">
+    <div class="portfolio-view">
         <router-view />
-        <router-link to="/">HOME</router-link>
     </div>
 </template>
 
@@ -12,4 +11,5 @@ export default {
 </script>
 
 <style>
+
 </style>

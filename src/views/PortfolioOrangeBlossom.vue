@@ -14,7 +14,7 @@ export default {
 
 <style>
     .portfolio-orange-blossom {
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         background: white;
         display: flex;

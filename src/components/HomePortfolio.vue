@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-section" id="portfolio-section">
-    <HomePortfolioSlider :tab="this.tab"/>
+    <HomePortfolioSlider ref="homePortfolioSlider" :tab="this.tab"/>
     <div class="slider-tabs">
       <a
         href="#portfolio-section"

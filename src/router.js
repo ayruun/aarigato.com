@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import PortfolioProject from './views/PortfolioProject.vue';
 import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
+import PortfolioCircleOfKings from './views/PortfolioCircleOfKings.vue';
 import Impressum from './views/Impressum.vue';
 
 import { games, apps } from "./assets/portfolio-slider-content.json";
@@ -18,6 +19,10 @@ const routes = [
       {
         path: 'orange-blossom',
         component: PortfolioOrangeBlossom
+      },
+      {
+        path: 'circle-of-kings',
+        component: PortfolioCircleOfKings
       },
       {
         path: ':project', 

@@ -41,6 +41,8 @@ export default {
   methods: {
     selectApps() {
        if (this.selectedTab === "games") {
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
         this.selectedTab = "apps";
         this.$refs.portfolioSection.$refs.appsTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
@@ -48,6 +50,8 @@ export default {
     },
     selectGames() {
       if (this.selectedTab === "apps") {
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
         this.selectedTab = "games";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
         this.$refs.portfolioSection.$refs.appsTab.style.color = "grey";

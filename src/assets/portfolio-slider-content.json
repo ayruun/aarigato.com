@@ -30,31 +30,22 @@
     ],
     "games": [
         {
-            "id": "g0",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "room in cgi",
-            "headline": "GAME TEST 1",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "Interactive Tour"
+            "id": "orange-blossom",
+            "imgSrc": "orange-blossom.jpg",
+            "imgAlt": "Orange Blossom Preview Image",
+            "headline": "Orange Blossom",
+            "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
+            "buttonLink": "/portfolio/orange-blossom",
+            "buttonText": "Play Now!"
         },
         {
-            "id": "g1",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "knife designs",
-            "headline": "GAME TEST 2",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "See in action"
-        },
-        {
-            "id": "g3",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "knife designs",
-            "headline": "GAME TEST 3",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "See in action"
+            "id": "circle-of-kings",
+            "imgSrc": "circle-of-kings.jpg",
+            "imgAlt": "Circle of Kings Preview Image",
+            "headline": "Circle of Kings",
+            "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
+            "buttonLink": "/portfolio/circle-of-kings",
+            "buttonText": "Play Now!"
         }
     ]
 }
