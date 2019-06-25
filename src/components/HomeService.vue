@@ -10,7 +10,7 @@
         <h3>
           <a href="#portfolio-section" @click="selectApps">APPS</a>
         </h3>
-        <p>Portfolio is coming soon.</p>
+        <p>Have a look at some of my Projects.</p>
       </div>
     </div>
     <div class="service-box" id="box-2">
@@ -23,18 +23,18 @@
         <h3>
           <a href="#portfolio-section" @click="selectGames">GAMES</a>
         </h3>
-        <p>Play Orange Blossom now! More coming soon!</p>
+        <p>Have fun playing some of my Games.</p>
       </div>
     </div>
     <div class="service-box" id="box-3">
-      <a href="#contact-section">
+      <a href="#home-contact">
         <div class="img-container">
           <img src="../assets/icons/mail.png" alt="contact icon">
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#contact-section">CONTACT</a>
+          <a href="#home-contact">CONTACT</a>
         </h3>
         <p>Feel free to contact me.</p>
       </div>
