@@ -1,7 +1,87 @@
 <template>
   <div class="impressum-view" id="impressum-view">
     <div class="impressum-container">
-      <div class="impressum-content"><p>Impressum</p></div>
+      <div class="impressum-content">
+
+<h1>Impressum</h1>
+
+<p>Angaben gemäß § 5 TMG</p>
+<br>
+<p>Aaron Behrendsen</p>  
+<p>Susannenstraße 6</p>   
+<p>20357 Hamburg</p>
+
+<h2>Vertreten durch: </h2>
+<p>Aaron Behrendsen</p>
+
+<h2>Kontakt:</h2>
+<p>Telefon: 017682055328</p>
+<p>E-Mail: <a href='mailto:aarigato@icloud.com'>aarigato@icloud.com</a></p> 
+
+<h3>Haftungsausschluss: </h3>
+
+<h4>Haftung für Inhalte</h4>
+
+<p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter 
+sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte 
+oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
+ Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden 
+ von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+ 
+<h4>Haftung für Links</h4>
+
+<p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
+ Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum 
+ Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von 
+ Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+ 
+<h4>Urheberrecht</h4>
+
+<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+ Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. 
+ Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine 
+ Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+ 
+ <h4>Datenschutz</h4>
+
+<p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, 
+erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
+
+<br><p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+ möglich.</p>
+
+<p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich 
+widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+
+<!-- /* einblenden, wenn ich es benutze */
+  <h4>Google Analytics</h4>
+
+  <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die 
+  eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google 
+  in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen
+  und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich 
+  vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation
+  der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll
+  umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten 
+  Zweck einverstanden.</p>
+    
+  <h4>Google AdSense</h4>
+
+  <p>Diese Website benutzt Google Adsense, einen Webanzeigendienst der Google Inc., USA (''Google''). Google Adsense verwendet sog. ''Cookies'' (Textdateien), die auf Ihrem Computer gespeichert werden und die
+  eine Analyse der Benutzung der Website durch Sie ermöglicht. Google Adsense verwendet auch sog. ''Web Beacons'' (kleine unsichtbare Grafiken) zur Sammlung von Informationen. Durch die Verwendung des Web
+  Beacons können einfache Aktionen wie der Besucherverkehr auf der Webseite aufgezeichnet und gesammelt werden. Die durch den Cookie und/oder Web Beacon erzeugten Informationen über Ihre Benutzung dieser 
+  Website (einschließlich Ihrer IP-Adresse) werden an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website im Hinblick 
+  auf die Anzeigen auszuwerten, um Reports über die Websiteaktivitäten und Anzeigen für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene 
+  Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten.
+  Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Das Speichern von Cookies auf Ihrer Festplatte und die Anzeige von Web Beacons können Sie verhindern, indem Sie
+  in Ihren Browser-Einstellungen ''keine Cookies akzeptieren'' wählen (Im MS Internet-Explorer unter ''Extras > Internetoptionen > Datenschutz > Einstellung''; im Firefox unter ''Extras > Einstellungen >
+  Datenschutz > Cookies''); wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website
+  erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p> -->
+
+
+<br><br><p>Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a> der <a href="https://www.kanzlei-hasselbach.de/standorte/bonn/">Kanzlei Hasselbach, Bonn</a></p><br><br>
+ 
+      </div>
     </div>
   </div>
 </template>
@@ -14,25 +94,63 @@ export default {
 
 <style>
 .impressum-view {
-  height: 100vh; /* auf 100% oder auto stellen wenn content drin ist */
+  height: auto; /* auf 100% oder auto stellen wenn content drin ist */
   width: auto;
-  background: white;
+  background: #f2f2f2;
 }
 
 .impressum-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding: 100px 0 25px 0;
 }
 
 .impressum-content {
-  height: 80vh; /* auf 100% stellen wenn content drin ist */
-  width: 75vw;
-  background: var(--secondary);
-  color: white;
+  height: auto; /* auf 100% stellen wenn content drin ist */
+  width: 85vw;
+  background: white;
+  box-shadow: 0px 2px 12px -2px rgba(31,31,31,0.23);
+  color: rgb(36, 36, 36);
+  text-align: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+.impressum-content p {
+  padding: 0;
+  margin: 0;
+}
+
+.impressum-content p,
+.impressum-content h1,
+.impressum-content h2,
+.impressum-content h3,
+.impressum-content h4 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.impressum-content h2 {
+  font-size: 16px;
+}
+
+.impressum-content h3 {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.impressum-content h1 {
+  margin-top: 35px;
+  margin-bottom: 30px
+}
+
+.impressum-content a {
+  color: rgb(36, 36, 36);
+  text-decoration: none;
+}
+
+.impressum-content a:hover {
+  color: var(--accent);
 }
 </style>
