@@ -1,31 +1,40 @@
 {
     "apps": [
         {
-            "id": "0",
+            "id": "apps0",
             "imgSrc": "interior-design.jpg",
             "imgAlt": "YouTube Playlist App Preview",
             "headline": "Playlist App",
             "infoText": "Custom YouTube Playlist App. Html, Css, JavaScript.",
-            "buttonLink": "portfolio/0",
-            "buttonText": "Listen Now!"
+            "buttonLink": "portfolio/apps0",
+            "buttonText": "Listen Now!",
+            "title": "myYouTubeApp",
+            "src": "//codepen.io/ayruun/embed/xNqJMJ/?height=265&theme-id=dark&default-tab=js,result",
+            "link": "https://codepen.io/ayruun/pen/xNqJMJ/"
         },
         {
-            "id": "1",
+            "id": "apps1",
             "imgSrc": "interior-design.jpg",
             "imgAlt": "Tribute Page Preview",
             "headline": "Tribute Page",
             "infoText": "Tribute Page Excercise. Html, Css, JavaScript.",
-            "buttonLink": "portfolio/1",
-            "buttonText": "See in action!"
+            "buttonLink": "portfolio/apps1",
+            "buttonText": "See in action!",
+            "title": "Fork Me! FCC: Test Suite Template",
+            "src": "//codepen.io/ayruun/embed/VOQWoe/?height=265&theme-id=dark&default-tab=js,result",
+            "link": "https://codepen.io/ayruun/pen/VOQWoe/"
         },
         {
-            "id": "2",
+            "id": "apps2",
             "imgSrc": "interior-design.jpg",
             "imgAlt": "Portfolio App Preview",
             "headline": "Portfolio App",
             "infoText": "Portfolio App Excercise. Html, Css, JavaScript.",
-            "buttonLink": "portfolio/2",
-            "buttonText": "Have a look!"
+            "buttonLink": "portfolio/apps2",
+            "buttonText": "Have a look!",
+            "title": "Fork Me! FCC: Test Suite Template",
+            "src": "//codepen.io/ayruun/embed/gNbyLo/?height=265&theme-id=dark&default-tab=css,result",
+            "link": "https://codepen.io/ayruun/pen/gNbyLo/"
         }
     ],
     "games": [
@@ -46,26 +55,6 @@
             "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
             "buttonLink": "/portfolio/circle-of-kings",
             "buttonText": "Play Now!"
-        }
-    ],
-    "codePens": [
-        {
-            "id": "myYouTubeApp",
-            "title": "myYouTubeApp",
-            "src": "//codepen.io/ayruun/embed/xNqJMJ/?height=265&theme-id=dark&default-tab=js,result",
-            "link": "https://codepen.io/ayruun/pen/xNqJMJ/"
-        },
-        {
-            "id": "Fork Me! FCC: Test Suite Template",
-            "title": "Fork Me! FCC: Test Suite Template",
-            "src": "//codepen.io/ayruun/embed/VOQWoe/?height=265&theme-id=dark&default-tab=js,result",
-            "link": "https://codepen.io/ayruun/pen/VOQWoe/"
-        },
-        {
-            "id": "Fork Me! FCC: Test Suite Template",
-            "title": "Fork Me! FCC: Test Suite Template",
-            "src": "//codepen.io/ayruun/embed/gNbyLo/?height=265&theme-id=dark&default-tab=css,result",
-            "link": "https://codepen.io/ayruun/pen/gNbyLo/"
         }
     ]
 }

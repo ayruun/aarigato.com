@@ -5,14 +5,14 @@
       height="265"
       style="width: 100%;"
       scrolling="no"
-      :title="codePens[index].title"
-      :src="codePens[index].src"
+      :title="apps[index].title"
+      :src="apps[index].src"
       frameborder="no"
       allowtransparency="true"
       allowfullscreen="true"
     >
       See the Pen
-      <a :href="codePens[index].link" target="_blank">{{ codePens[index].title }}</a> by aarigato
+      <a :href="apps[index].link" target="_blank">{{ apps[index].title }}</a> by aarigato
       (
       <a href="https://codepen.io/ayruun">@ayruun</a>) on
       <a href="https://codepen.io">CodePen</a>.
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import {codePens} from "../assets/portfolio-slider-content.json";
+import {apps} from "../assets/portfolio-slider-content.json";
 
 export default {
   name: "PortfolioProject",
@@ -33,12 +33,12 @@ export default {
   },
   data() {
     return {
-      codePens,
+      apps,
       index: 0
     }
   },
   created: function() {
-    this.index = parseInt(this.project); 
+    this.index = parseInt(this.project.match(/\d+/g).join(""))
   }
 };
 </script>
