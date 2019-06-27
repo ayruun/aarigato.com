@@ -2,7 +2,7 @@
     "apps": [
         {
             "id": "apps0",
-            "imgSrc": "interior-design.jpg",
+            "imgSrc": "portfolio-img-1.jpg",
             "imgAlt": "YouTube Playlist App Preview",
             "headline": "Playlist App",
             "infoText": "Custom YouTube Playlist App. Html, Css, JavaScript.",
@@ -14,7 +14,7 @@
         },
         {
             "id": "apps1",
-            "imgSrc": "interior-design.jpg",
+            "imgSrc": "portfolio-img-2.jpg",
             "imgAlt": "Tribute Page Preview",
             "headline": "Tribute Page",
             "infoText": "Tribute Page Excercise. Html, Css, JavaScript.",
@@ -26,15 +26,15 @@
         },
         {
             "id": "apps2",
-            "imgSrc": "interior-design.jpg",
+            "imgSrc": "portfolio-img-3.jpg",
             "imgAlt": "Portfolio App Preview",
-            "headline": "Portfolio App",
+            "headline": "Survey Form",
             "infoText": "Portfolio App Excercise. Html, Css, JavaScript.",
             "buttonLink": "portfolio/apps2",
             "buttonText": "Have a look!",
             "title": "Fork Me! FCC: Test Suite Template",
-            "src": "//codepen.io/ayruun/embed/gNbyLo/?height=265&theme-id=dark&default-tab=css,result",
-            "link": "https://codepen.io/ayruun/pen/gNbyLo/"
+            "src": "//codepen.io/ayruun/embed/arqLVy/?height=265&theme-id=dark&default-tab=html,result",
+            "link": "https://codepen.io/ayruun/pen/arqLVy/"
         }
     ],
     "games": [
