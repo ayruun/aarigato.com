@@ -3,13 +3,13 @@
         <p class="copyright">
             COPYRIGHT AARIGATO
         </p>
-        <a href="#" class="impressum">IMPRESSUM</a>
+        <router-link :to="{ path: '/impressum/', hash: '#impressum-view' }" class="impressum">IMPRESSUM</router-link>
     </div>
 </template>
 
 <script>
 export default {
-    name: "FooterSection"
+    name: "UFooter"
 }
 </script>
 

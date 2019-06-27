@@ -1,14 +1,22 @@
 <template>
-    <div class="portfolio">
-        <router-view />
-        <router-link to="/">HOME</router-link>
-    </div>
+  <div class="portfolio-view">
+
+    <router-view />
+
+  </div>
 </template>
 
 <script>
+import { codePens } from "../assets/portfolio-slider-content.json";
+
 export default {
-    name: "portfolio",
-}
+  name: "Portfolio",
+  data() {
+    return {
+      codePens
+    };
+  }
+};
 </script>
 
 <style>

@@ -1,60 +1,60 @@
 {
     "apps": [
         {
-            "id": "p0",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "room in cgi",
-            "headline": "Orange Blossom",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "portfolio/orange-blossom",
-            "buttonText": "Interactive Tour"
+            "id": "apps0",
+            "imgSrc": "portfolio-img-1.jpg",
+            "imgAlt": "YouTube Playlist App Preview",
+            "headline": "Playlist App",
+            "infoText": "Custom YouTube Playlist App. Html, Css, JavaScript.",
+            "buttonLink": "portfolio/apps0",
+            "buttonText": "Listen Now!",
+            "title": "myYouTubeApp",
+            "src": "//codepen.io/ayruun/embed/xNqJMJ/?height=265&theme-id=dark&default-tab=js,result",
+            "link": "https://codepen.io/ayruun/pen/xNqJMJ/"
         },
         {
-            "id": "p1",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "knife designs",
-            "headline": "Knife Designs",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "See in action"
+            "id": "apps1",
+            "imgSrc": "portfolio-img-2.jpg",
+            "imgAlt": "Tribute Page Preview",
+            "headline": "Tribute Page",
+            "infoText": "Tribute Page Excercise. Html, Css, JavaScript.",
+            "buttonLink": "portfolio/apps1",
+            "buttonText": "See in action!",
+            "title": "Fork Me! FCC: Test Suite Template",
+            "src": "//codepen.io/ayruun/embed/VOQWoe/?height=265&theme-id=dark&default-tab=js,result",
+            "link": "https://codepen.io/ayruun/pen/VOQWoe/"
         },
         {
-            "id": "p2",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "test designs",
-            "headline": "Test Designs",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "Test action"
+            "id": "apps2",
+            "imgSrc": "portfolio-img-3.jpg",
+            "imgAlt": "Portfolio App Preview",
+            "headline": "Survey Form",
+            "infoText": "Portfolio App Excercise. Html, Css, JavaScript.",
+            "buttonLink": "portfolio/apps2",
+            "buttonText": "Have a look!",
+            "title": "Fork Me! FCC: Test Suite Template",
+            "src": "//codepen.io/ayruun/embed/arqLVy/?height=265&theme-id=dark&default-tab=html,result",
+            "link": "https://codepen.io/ayruun/pen/arqLVy/"
         }
     ],
     "games": [
         {
-            "id": "g0",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "room in cgi",
-            "headline": "GAME TEST 1",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "Interactive Tour"
+            "id": "orange-blossom",
+            "imgSrc": "orange-blossom.jpg",
+            "imgAlt": "Orange Blossom Preview Image",
+            "headline": "Orange Blossom",
+            "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
+            "buttonLink": "/portfolio/orange-blossom",
+            "buttonText": "Play Now!"
         },
         {
-            "id": "g1",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "knife designs",
-            "headline": "GAME TEST 2",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "See in action"
-        },
-        {
-            "id": "g3",
-            "imgSrc": "interior-design.jpg",
-            "imgAlt": "knife designs",
-            "headline": "GAME TEST 3",
-            "infoText": "Modelling and rendering in Cinema4D. Personal work. More stuff coming soon!",
-            "buttonLink": "#portfolio-section",
-            "buttonText": "See in action"
+            "id": "circle-of-kings",
+            "imgSrc": "circle-of-kings.jpg",
+            "imgAlt": "Circle of Kings Preview Image",
+            "headline": "Circle of Kings",
+            "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
+            "buttonLink": "/portfolio/circle-of-kings",
+            "buttonText": "Play Now!"
         }
     ]
 }

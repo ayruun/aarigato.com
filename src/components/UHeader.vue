@@ -1,13 +1,9 @@
 <template>
-  <div class="header-section" id="header-section">
+  <div class="u-header" id="u-header">
     <header class="header">
       <div class="logo">
-        <a href="#header-section">
-          <img
-            class="logo-img"
-            src="../assets/logo.png"
-            alt="aarigato logo"
-          >
+        <a @click="goHome">
+          <img class="logo-img" src="../assets/logo.png" alt="aarigato logo">
         </a>
       </div>
 
@@ -18,13 +14,19 @@
       <nav class="nav-bar" v-bind:class="{ active: isActive }">
         <ul>
           <li class="nav-li">
-            <a class="nav-links" href="#portfolio-section" @click="selectPortfolio">PORTFOLIO</a>
+            <a @click="goPortfolio" class="nav-links">
+              <span>PORTFOLIO</span>
+            </a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#portfolio-section" @click="selectGames">GAMES</a>
+            <a @click="goContact" class="nav-links">
+              <span>CONTACT</span>
+            </a>
           </li>
           <li class="nav-li">
-            <a class="nav-links" href="#contact-section" @click="selectContact">CONTACT</a>
+            <a @click="goAbout" class="nav-links">
+              <span>ABOUT</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -34,7 +36,7 @@
 
 <script>
 export default {
-  name: "HeaderSection",
+  name: "UHeader",
   data() {
     return {
       isActive: false
@@ -45,16 +47,21 @@ export default {
       this.isActive ? (this.isActive = false) : (this.isActive = true);
     },
     closeMenu() {
-        this.isActive = false;
+      this.isActive = false;
     },
-    selectPortfolio() {
-      this.$emit("select-portfolio");
+    goHome() {
+      this.$router.push("/");
+      this.$router.push("#u-header");
     },
-    selectGames() {
-      this.$emit("select-games");
+    goPortfolio() {
+      this.$router.push("/");
+      this.$router.push("#portfolio-section");
     },
-    selectContact() {
+    goContact() {
       this.$emit("select-contact");
+    },
+    goAbout() {
+      this.$emit("select-about");
     }
   }
 };
@@ -79,6 +86,7 @@ export default {
 .logo img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .nav-bar {
@@ -103,6 +111,7 @@ export default {
   text-decoration: none;
   color: white;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-bar a:hover {

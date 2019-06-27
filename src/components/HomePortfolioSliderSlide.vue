@@ -4,9 +4,11 @@
     <div class="portfolio-info">
       <h4>{{ slide.headline }}</h4>
       <p>{{ slide.infoText }}</p>
-      <button class="button">
-        <router-link :to="slide.buttonLink">{{ slide.buttonText }}</router-link>
-      </button>
+      <router-link :to="slide.buttonLink">
+        <button class="button">
+          {{ slide.buttonText }}
+        </button>
+      </router-link>
     </div>
   </li>
 </template>
@@ -54,6 +56,8 @@ export default {
 .portfolio-info p {
   font-size: 0.9em;
   max-width: 250px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 680px) {

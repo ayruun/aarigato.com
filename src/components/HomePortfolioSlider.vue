@@ -1,6 +1,6 @@
 <template>
   <div class="content-slider">
-    <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'portfolio'">
+    <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'apps'">
       <HomePortfolioSliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
     </ul>
     <ul class="content-slider-wrap" ref="ul" v-else>
@@ -44,7 +44,7 @@ export default {
       if (this.slideCount == 0) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else if (
-        this.tab === "portfolio" &&
+        this.tab === "apps" &&
         this.slideCount < this.apps.length - 1
       ) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
@@ -59,7 +59,7 @@ export default {
       }
     },
     prevSlide() {
-      if (this.slideCount == 0 && this.tab === "portfolio") {
+      if (this.slideCount == 0 && this.tab === "apps") {
         this.slideCount = this.apps.length - 1;
         this.$refs.ul.style.left = `-${this.slideCount}00vw`;
       } else if (this.slideCount == 0 && this.tab === "games") {

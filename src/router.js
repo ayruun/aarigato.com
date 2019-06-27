@@ -4,19 +4,25 @@ import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import PortfolioProject from './views/PortfolioProject.vue';
 import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
+import PortfolioCircleOfKings from './views/PortfolioCircleOfKings.vue';
+import Impressum from './views/Impressum.vue';
 
 import { games, apps } from "./assets/portfolio-slider-content.json";
 
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', name: "HomeRoute", component: Home },
   { path: '/portfolio', 
     component: Portfolio,
     children: [
       {
         path: 'orange-blossom',
         component: PortfolioOrangeBlossom
+      },
+      {
+        path: 'circle-of-kings',
+        component: PortfolioCircleOfKings
       },
       {
         path: ':project', 
@@ -34,10 +40,20 @@ const routes = [
         }
       }
     ]
-  }
+  },
+  { path: '/impressum', component: Impressum }
 ];
 
 export default new VueRouter({
   mode: 'history',
-  routes // eigentlich routes: routes,
+  routes, // eigentlich routes: routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+        return savedPosition;
+    }
+    if (to.hash) {
+        return { selector: to.hash };
+    }
+    return { x: 0, y: 0 };
+}
 });

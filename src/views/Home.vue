@@ -1,79 +1,67 @@
 <template>
   <div>
-    <HomeHeader
-      @select-portfolio="selectPortfolio"
-      @select-games="selectGames"
-      @select-contact="selectContact"
-      ref="headerSection"
-    />
-    <HomeStage @scroll-down="scrollToMiddle"/>
-    <HomeService
-      @select-portfolio="selectPortfolio"
-      @select-games="selectGames"
-      ref="HomeService"
-    />
+    <HomeStage @scroll-down="scrollToService"/>
+    <HomeService @select-apps="selectApps" @select-games="selectGames" @select-contact="scrollToContact" ref="homeService"/>
     <HomePortfolio
-      @select-portfolio="selectPortfolio"
+      @select-apps="selectApps"
       @select-games="selectGames"
       ref="portfolioSection"
       :tab="selectedTab"
     />
-    <HomeContact/>
-    <HomeFooter/>
+    <HomeContact ref="homeContact"/>
+    <HomeAbout ref="homeAbout"/>
   </div>
 </template>
 
 <script>
-import HomeHeader from "../components/HomeHeader.vue";
 import HomeStage from "../components/HomeStage.vue";
 import HomeService from "../components/HomeService.vue";
 import HomePortfolio from "../components/HomePortfolio.vue";
+import HomeAbout from "../components/HomeAbout.vue";
 import HomeContact from "../components/HomeContact.vue";
-import HomeFooter from "../components/HomeFooter.vue";
 
 export default {
-  name: "app",
+  name: "Home",
   components: {
-    HomeHeader,
     HomeStage,
     HomeService,
     HomePortfolio,
     HomeContact,
-    HomeFooter
+    HomeAbout
   },
   data() {
     return {
-      selectedTab: "portfolio"
+      selectedTab: "apps"
     };
   },
   methods: {
-    selectPortfolio() {
+    selectApps() {
       if (this.selectedTab === "games") {
-        this.selectedTab = "portfolio";
-        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "white";
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
+        this.selectedTab = "apps";
+        this.$refs.portfolioSection.$refs.appsTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
-      }
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
       }
     },
     selectGames() {
-      if (this.selectedTab === "portfolio") {
+      if (this.selectedTab === "apps") {
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
         this.selectedTab = "games";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
-        this.$refs.portfolioSection.$refs.portfolioTab.style.color = "grey";
-      }
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
+        this.$refs.portfolioSection.$refs.appsTab.style.color = "grey";
       }
     },
-    selectContact() {
-      if (this.$refs.headerSection.isActive) {
-        this.$refs.headerSection.isActive = false;
-      }
+    scrollToService() {
+      this.$refs.homeService.$refs.service.scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center"
+      });
     },
-    scrollToMiddle() {
-      this.$refs.HomeService.$refs.service.scrollIntoView({
+    scrollToContact() {
+      this.$refs.homeContact.$refs.contact.scrollIntoView({
         behavior: "auto",
         block: "center",
         inline: "center"
@@ -86,6 +74,7 @@ export default {
 <style>
 .button {
   text-transform: uppercase;
+  color: white;
   background-color: var(--accent);
   border: none;
   border-radius: 6px;
@@ -94,10 +83,11 @@ export default {
 
 .button:hover {
   background-color: var(--accent-hover);
+  cursor: pointer;
 }
 
 .button a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 </style>

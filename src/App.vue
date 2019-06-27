@@ -1,12 +1,43 @@
 <template>
   <div id="app">
-    <router-view />
+    <UHeader @select-contact="selectContact" @select-about="selectAbout"/>
+    <router-view ref="homeView"/>
+    <UFooter/>
   </div>
 </template>
 
 <script>
+import UHeader from "./components/UHeader.vue";
+import UFooter from "./components/UFooter.vue";
+
 export default {
-  
+  name: "home",
+  components: {
+    UHeader,
+    UFooter
+  },
+  methods: {
+    selectContact() {
+      if (this.$router.currentRoute.name != "HomeRoute") {
+        this.$router.push("/");
+        this.$router.push("#home-contact");
+      } else {
+        this.$refs.homeView.$refs.homeContact.$refs.contact.scrollIntoView({
+          behavior: "auto",
+          block: "center",
+          inline: "center"
+        });
+      }
+    },
+    selectAbout() {
+      if (this.$router.currentRoute.name != "HomeRoute") {
+        this.$router.push("/");
+        this.$router.push("#home-about");
+      } else {
+        this.$refs.homeView.$refs.homeAbout.$refs.about.scrollIntoView();
+      }
+    }
+  }
 };
 </script>
 
@@ -16,6 +47,7 @@ export default {
   --secondary: rgb(110, 110, 110);
   --accent: #ffca2f;
   --accent-hover: rgb(255, 217, 0);
+  scroll-behavior: smooth;
 }
 
 /* Was genau bedeutet das / was macht es?
@@ -30,7 +62,6 @@ body {
   margin: 0;
   padding: 0;
   background: var(--accent);
-  scroll-behavior: smooth;
 }
 
 #app {

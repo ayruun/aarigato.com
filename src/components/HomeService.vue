@@ -1,16 +1,16 @@
 <template>
   <div class="service-section" id="service-section" ref="service">
     <div class="service-box" id="box-1">
-      <a href="#portfolio-section" @click="selectPortfolio">
+      <a href="#portfolio-section" @click="selectApps">
         <div class="img-container">
           <img src="../assets/icons/apps.png" alt="apps icon">
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#portfolio-section" @click="selectPortfolio">APPS</a>
+          <a href="#portfolio-section" @click="selectApps">APPS</a>
         </h3>
-        <p>Portfolio is coming soon.</p>
+        <p>Have a look at some of my Projects.</p>
       </div>
     </div>
     <div class="service-box" id="box-2">
@@ -23,18 +23,18 @@
         <h3>
           <a href="#portfolio-section" @click="selectGames">GAMES</a>
         </h3>
-        <p>Play Orange Blossom now! More coming soon!</p>
+        <p>Have fun playing some of my Games.</p>
       </div>
     </div>
     <div class="service-box" id="box-3">
-      <a href="#contact-section">
+      <a @click="selectContact">
         <div class="img-container">
           <img src="../assets/icons/mail.png" alt="contact icon">
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#contact-section">CONTACT</a>
+          <a @click="selectContact">CONTACT</a>
         </h3>
         <p>Feel free to contact me.</p>
       </div>
@@ -44,13 +44,16 @@
 
 <script>
 export default {
-  name: "ServiceSection",
+  name: "HomeService",
   methods: {
-    selectPortfolio() {
-      this.$emit("select-portfolio");
+    selectApps() {
+      this.$emit("select-apps");
     },
     selectGames() {
       this.$emit("select-games");
+    },
+    selectContact() {
+      this.$emit("select-contact")
     }
   }
 };
@@ -80,6 +83,7 @@ export default {
   text-decoration: none;
   color: black;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .img-container {

@@ -1,18 +1,98 @@
 <template>
-  <div class="contact-section" id="contact-section">
-    <img
-      src="../assets/images/portrait.png"
-      alt="gato on the roof"
-      class="contact-img"
-    >
-    <div class="contact-info">
-      <h4>MOIN MOIN I'M AARON</h4>
-      <p>
-        I am a visual generalist whose specialty is working in 3 dimensions, always with one eye on the brand and the other one on the purpose of the design. I love good briefings and working conceptually and like to keep key elements in focus when others get stuck on details.
-        <br><br>Get in touch:
-      </p>
-      <button class="button">
-        <a href="mailto:aarigato@icloud.com">SEND MAIL</a>
+  <div class="home-contact" id="home-contact" ref="contact">
+    <div class="contact-container" id="contact-container-1">
+      <div class="contact-box" id="contact-1">
+        <a href="https://github.com/ayruun" target="_blank">
+          <div class="img-container">
+            <img src="../assets/icons/GitHubLogo.png" alt="GitHub Logo">
+          </div>
+        </a>
+        <div class="service-content">
+          <h3>
+            <a href="https://github.com/ayruun" target="_blank">GitHub</a>
+          </h3>
+          <p>Check out this Website and more.</p>
+        </div>
+      </div>
+      <div class="contact-box" id="contact-2">
+        <a href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/" target="_blank">
+          <div class="img-container">
+            <img src="../assets/icons/LinkedInLogo.png" alt="LinkedIn Logo">
+          </div>
+        </a>
+        <div class="service-content">
+          <h3>
+            <a
+              href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/"
+              target="_blank"
+            >LinkedIn</a>
+          </h3>
+          <p>Feel free to contact me via LinkedIn.</p>
+        </div>
+      </div>
+      <div class="contact-box" id="contact-3">
+        <a href="https://www.freecodecamp.org/aarigato" target="_blank">
+          <div class="img-container">
+            <img src="../assets/icons/freeCodeCampLogo.png" alt="freeCodeCamp Logo">
+          </div>
+        </a>
+        <div class="service-content">
+          <h3>
+            <a href="https://www.freecodecamp.org/aarigato" target="_blank">CodeCamp</a>
+          </h3>
+          <p>Have a look at my CodeCamp Profile.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-container" id="contact-container-2" v-if="fullContact">
+      <div class="contact-box" id="contact-1">
+        <a href="https://codepen.io/ayruun/" target="_blank">
+          <div class="img-container">
+            <img src="../assets/icons/CodePenLogo.png" alt="CodePen Logo">
+          </div>
+        </a>
+        <div class="service-content">
+          <h3>
+            <a href="https://codepen.io/ayruun/" target="_blank">CodePen</a>
+          </h3>
+          <p>Check out my projects on Codepen.</p>
+        </div>
+      </div>
+      <div class="contact-box" id="contact-2">
+        <a href="https://www.xing.com/profile/Aaron_Behrendsen/" target="_blank">
+          <div class="img-container">
+            <img src="../assets/icons/xingLogo.png" alt="Xing Logo">
+          </div>
+        </a>
+        <div class="service-content">
+          <h3>
+            <a
+              href="https://www.xing.com/profile/Aaron_Behrendsen/"
+              target="_blank"
+            >Xing</a>
+          </h3>
+          <p>Feel free to contact me via Xing.</p>
+        </div>
+      </div>
+      <div class="contact-box" id="contact-3">
+        <a href="mailto:aarigato@icloud.com" target="_blank">
+          <div class="img-container">
+            <img src="../assets/icons/mail.png" alt="mail icon">
+          </div>
+        </a>
+        <div class="service-content">
+          <h3>
+            <a href="mailto:aarigato@icloud.com">Send Mail</a>
+          </h3>
+          <p>Feel free to contact me via Mail.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-btn-div">
+      <button class="button" @click="toggleShow">
+        <span>{{ buttonText }}</span>
       </button>
     </div>
   </div>
@@ -20,62 +100,89 @@
 
 <script>
 export default {
-  name: "ContactSection"
+  name: "HomeContact",
+  data() {
+    return {
+      fullContact: false,
+      buttonText: "SHOW MORE"
+    }
+  },
+  methods: {
+    toggleShow() {
+      if(this.fullContact) {
+        this.fullContact = false;
+        this.buttonText = "SHOW MORE";
+        this.$refs.contact.style.height = "50vh";
+      } else {
+        this.fullContact = true;
+        this.buttonText = "SHOW LESS";
+        this.$refs.contact.style.height = "80vh";
+      }
+    }
+  }
 };
 </script>
 
 <style>
-.contact-section {
-  height: 100vh;
+.home-contact {
   background-color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
-.contact-img {
-  max-height: 60vh;
-  width: auto;
-  margin-left: 50px;
+.contact-box {
+  text-align: center;
+  margin: 50px 50px;
+  max-width: 200px;
 }
 
-.contact-info {
-  text-align: left;
-  margin: 0 50px;
+.contact-box p {
+  font-weight: 100;
+  font-size: 0.9em;
+  color: var(--secondary);
 }
 
-.contact-info h4 {
-  font-size: 1.5em;
-  margin-top: 0;
+.contact-box a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  cursor: pointer;
 }
 
-.contact-info p {
-    font-size: 0.9em;
-    max-width: 250px;
-    color: var(--secondary);
-}
+@media (max-width: 633px) {
+  .home-contact {
+    height: auto;
+  }
 
-@media (max-width: 800px) {
-  .contact-section {
-    position: relative;
+  .contact-container {
     flex-direction: column;
   }
 
-  .contact-img {
-    max-height: 45vh;
-    max-width: 90vw;
-    margin: 100px 25px 0 25px;
+  .contact-box {
+    margin: 20px 0;
   }
 
-  .contact-info {
-    margin: 25px;
-    align-content: center;
-    text-align: center;
+  #contact-2 {
+    margin: 0;
   }
 
-  .contact-info p {
-    max-width: 500px;
+  #contact-container-2,
+  .more-btn-div {
+    display: none;
   }
 }
 </style>
