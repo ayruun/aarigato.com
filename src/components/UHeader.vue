@@ -51,29 +51,17 @@ export default {
     },
     goHome() {
       this.$router.push("/");
-      if (window.location.pathname === "/") {
-        this.$router.push("#u-header");
-      }
+      this.$router.push("#u-header");
     },
     goPortfolio() {
       this.$router.push("/");
-      if (window.location.pathname === "/") {
-        this.$router.push("#portfolio-section");
-      }
+      this.$router.push("#portfolio-section");
     },
     goContact() {
-      this.$router.push("/");
-      if (window.location.pathname === "/") {
-        this.$router.push("#home-contact");
-      }
+      this.$emit("select-contact");
     },
     goAbout() {
-      // TODO: double tap switches to HomeStage
-      
-      this.$router.push("/");
-      if (window.location.pathname === "/") {
-        this.$router.push("#home-about");
-      }
+      this.$emit("select-about");
     }
   }
 };

@@ -9,7 +9,7 @@
       :tab="selectedTab"
     />
     <HomeContact ref="homeContact"/>
-    <HomeAbout/>
+    <HomeAbout ref="homeAbout"/>
   </div>
 </template>
 

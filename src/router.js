@@ -12,7 +12,7 @@ import { games, apps } from "./assets/portfolio-slider-content.json";
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', name: "HomeRoute", component: Home },
   { path: '/portfolio', 
     component: Portfolio,
     children: [
