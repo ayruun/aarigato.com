@@ -54,7 +54,7 @@
         </a>
         <div class="service-content">
           <h3>
-            <a href="https://codepen.io/ayruun/" target="_blank">CODEPEN</a>
+            <a href="https://codepen.io/ayruun/" target="_blank">CodePen</a>
           </h3>
           <p>Check out my projects on Codepen.</p>
         </div>
@@ -70,7 +70,7 @@
             <a
               href="https://www.xing.com/profile/Aaron_Behrendsen/"
               target="_blank"
-            >XING</a>
+            >Xing</a>
           </h3>
           <p>Feel free to contact me via Xing.</p>
         </div>
@@ -83,7 +83,7 @@
         </a>
         <div class="service-content">
           <h3>
-            <a href="mailto:aarigato@icloud.com" target="_blank">SEND MAIL</a>
+            <a href="mailto:aarigato@icloud.com">Send Mail</a>
           </h3>
           <p>Feel free to contact me via Mail.</p>
         </div>

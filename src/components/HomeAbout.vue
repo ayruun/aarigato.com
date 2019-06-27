@@ -8,9 +8,10 @@
         <br>
         <br>Get in touch:
       </p>
-      <button class="button">
-        <a href="mailto:aarigato@icloud.com">SEND MAIL</a>
-      </button>
+
+      <a href="mailto:aarigato@icloud.com">
+        <button class="button">SEND MAIL</button>
+      </a>
     </div>
   </div>
 </template>
