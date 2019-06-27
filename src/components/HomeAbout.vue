@@ -1,5 +1,5 @@
 <template>
-  <div class="home-about" id="home-about">
+  <div class="home-about" id="home-about" ref="about">
     <img src="../assets/images/portrait.png" alt="gato on the roof" class="about-img">
     <div class="about-info">
       <h4>MOIN MOIN I'M AARON</h4>
