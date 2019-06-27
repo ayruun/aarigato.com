@@ -27,14 +27,14 @@
       </div>
     </div>
     <div class="service-box" id="box-3">
-      <a href="#home-contact">
+      <a @click="selectContact">
         <div class="img-container">
           <img src="../assets/icons/mail.png" alt="contact icon">
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#home-contact">CONTACT</a>
+          <a @click="selectContact">CONTACT</a>
         </h3>
         <p>Feel free to contact me.</p>
       </div>
@@ -51,6 +51,9 @@ export default {
     },
     selectGames() {
       this.$emit("select-games");
+    },
+    selectContact() {
+      this.$emit("select-contact")
     }
   }
 };
@@ -80,6 +83,7 @@ export default {
   text-decoration: none;
   color: black;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .img-container {

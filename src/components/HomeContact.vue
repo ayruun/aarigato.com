@@ -1,5 +1,5 @@
 <template>
-  <div class="home-contact" id="home-contact">
+  <div class="home-contact" id="home-contact" ref="contact">
     <div class="service-box" id="contact-1">
       <a href="#">
         <div class="img-container">

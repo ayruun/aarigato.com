@@ -1,18 +1,14 @@
 <template>
   <div>
     <HomeStage @scroll-down="scrollToService"/>
-    <HomeService
-      @select-apps="selectApps"
-      @select-games="selectGames"
-      ref="homeService"
-    />
+    <HomeService @select-apps="selectApps" @select-games="selectGames" @select-contact="scrollToContact" ref="homeService"/>
     <HomePortfolio
       @select-apps="selectApps"
       @select-games="selectGames"
       ref="portfolioSection"
       :tab="selectedTab"
     />
-    <HomeContact/>
+    <HomeContact ref="homeContact"/>
     <HomeAbout/>
   </div>
 </template>
@@ -40,7 +36,7 @@ export default {
   },
   methods: {
     selectApps() {
-       if (this.selectedTab === "games") {
+      if (this.selectedTab === "games") {
         this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
         this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
         this.selectedTab = "apps";
@@ -59,6 +55,13 @@ export default {
     },
     scrollToService() {
       this.$refs.homeService.$refs.service.scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center"
+      });
+    },
+    scrollToContact() {
+      this.$refs.homeContact.$refs.contact.scrollIntoView({
         behavior: "auto",
         block: "center",
         inline: "center"
