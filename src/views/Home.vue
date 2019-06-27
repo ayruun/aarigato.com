@@ -71,6 +71,7 @@ export default {
 <style>
 .button {
   text-transform: uppercase;
+  color: white;
   background-color: var(--accent);
   border: none;
   border-radius: 6px;
@@ -79,10 +80,6 @@ export default {
 
 .button:hover {
   background-color: var(--accent-hover);
-}
-
-.button a {
-  text-decoration: none;
-  color: white;
+  cursor: pointer;
 }
 </style>
