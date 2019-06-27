@@ -1,10 +1,10 @@
 <template>
   <div>
-    <HomeStage @scroll-down="scrollToMiddle"/>
+    <HomeStage @scroll-down="scrollToService"/>
     <HomeService
       @select-apps="selectApps"
       @select-games="selectGames"
-      ref="HomeService"
+      ref="homeService"
     />
     <HomePortfolio
       @select-apps="selectApps"
@@ -57,8 +57,8 @@ export default {
         this.$refs.portfolioSection.$refs.appsTab.style.color = "grey";
       }
     },
-    scrollToMiddle() {
-      this.$refs.HomeService.$refs.service.scrollIntoView({
+    scrollToService() {
+      this.$refs.homeService.$refs.service.scrollIntoView({
         behavior: "auto",
         block: "center",
         inline: "center"
@@ -81,5 +81,10 @@ export default {
 .button:hover {
   background-color: var(--accent-hover);
   cursor: pointer;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
 }
 </style>

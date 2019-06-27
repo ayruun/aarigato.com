@@ -2,9 +2,9 @@
   <div class="u-header" id="u-header">
     <header class="header">
       <div class="logo">
-        <router-link :to="{ path: '/', hash: '#u-header' }">
+        <a @click="goHome">
           <img class="logo-img" src="../assets/logo.png" alt="aarigato logo">
-        </router-link>
+        </a>
       </div>
 
       <div class="burger-menu" @click="toggleMenu" v-click-outside="closeMenu">
@@ -14,19 +14,19 @@
       <nav class="nav-bar" v-bind:class="{ active: isActive }">
         <ul>
           <li class="nav-li">
-            <router-link :to="{ path: '/', hash: '#portfolio-section' }" class="nav-links">
+            <a @click="goPortfolio" class="nav-links">
               <span>PORTFOLIO</span>
-            </router-link>
+            </a>
           </li>
           <li class="nav-li">
-            <router-link :to="{ path: '/', hash: '#home-contact' }" class="nav-links">
+            <a @click="goContact" class="nav-links">
               <span>CONTACT</span>
-            </router-link>
+            </a>
           </li>
           <li class="nav-li">
-            <router-link :to="{ path: '/', hash: '#home-about' }" class="nav-links">
+            <a @click="goAbout" class="nav-links">
               <span>ABOUT</span>
-            </router-link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -48,6 +48,32 @@ export default {
     },
     closeMenu() {
       this.isActive = false;
+    },
+    goHome() {
+      this.$router.push("/");
+      if (window.location.pathname === "/") {
+        this.$router.push("#u-header");
+      }
+    },
+    goPortfolio() {
+      this.$router.push("/");
+      if (window.location.pathname === "/") {
+        this.$router.push("#portfolio-section");
+      }
+    },
+    goContact() {
+      this.$router.push("/");
+      if (window.location.pathname === "/") {
+        this.$router.push("#home-contact");
+      }
+    },
+    goAbout() {
+      // TODO: double tap switches to HomeStage
+      
+      this.$router.push("/");
+      if (window.location.pathname === "/") {
+        this.$router.push("#home-about");
+      }
     }
   }
 };
@@ -72,6 +98,7 @@ export default {
 .logo img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .nav-bar {
@@ -96,6 +123,7 @@ export default {
   text-decoration: none;
   color: white;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-bar a:hover {
