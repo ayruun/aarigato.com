@@ -1,7 +1,11 @@
 <template>
-    <div class="portfolio-circle-of-kings">
-        <iframe class="iframe" src="https://aarigato.de/CircleOfKingsV1-0/" frameborder="0"></iframe>
-    </div>
+  <div class="portfolio-circle-of-kings">
+    <iframe
+      class="iframe"
+      src="https://aarigato.de/CircleOfKingsV1-0/"
+      frameborder="0"
+    />
+  </div>
 </template>
 
 <script>

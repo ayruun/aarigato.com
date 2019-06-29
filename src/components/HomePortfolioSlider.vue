@@ -1,16 +1,40 @@
 <template>
   <div class="content-slider">
-    <ul class="content-slider-wrap" ref="ul" v-if="this.tab === 'apps'">
-      <HomePortfolioSliderSlide v-for="item in apps" :key="item.id" :slide="item"/>
+    <ul
+      v-if="tab === 'apps'"
+      ref="ul"
+      class="content-slider-wrap"
+    >
+      <HomePortfolioSliderSlide
+        v-for="item in apps"
+        :key="item.id"
+        :slide="item"
+      />
     </ul>
-    <ul class="content-slider-wrap" ref="ul" v-else>
-      <HomePortfolioSliderSlide v-for="item in games" :key="item.id" :slide="item"/>
+    <ul
+      v-else
+      ref="ul"
+      class="content-slider-wrap"
+    >
+      <HomePortfolioSliderSlide
+        v-for="item in games"
+        :key="item.id"
+        :slide="item"
+      />
     </ul>
     <div class="slider-btns">
-      <a id="prev" href="#portfolio-section" @click="prevSlide">
+      <a
+        id="prev"
+        href="#portfolio-section"
+        @click="prevSlide"
+      >
         <i class="material-icons">keyboard_arrow_left</i>
       </a>
-      <a id="next" href="#portfolio-section" @click="nextSlide">
+      <a
+        id="next"
+        href="#portfolio-section"
+        @click="nextSlide"
+      >
         <i class="material-icons">keyboard_arrow_right</i>
       </a>
     </div>

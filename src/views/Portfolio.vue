@@ -1,8 +1,6 @@
 <template>
   <div class="portfolio-view">
-
     <router-view />
-
   </div>
 </template>
 

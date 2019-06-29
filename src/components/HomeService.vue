@@ -1,35 +1,69 @@
 <template>
-  <div class="service-section" id="service-section" ref="service">
-    <div class="service-box" id="box-1">
-      <a href="#portfolio-section" @click="selectApps">
+  <div
+    id="service-section"
+    ref="service"
+    class="service-section"
+  >
+    <div
+      id="box-1"
+      class="service-box"
+    >
+      <a
+        href="#portfolio-section"
+        @click="selectApps"
+      >
         <div class="img-container">
-          <img src="../assets/icons/apps.png" alt="apps icon">
+          <img
+            src="../assets/icons/apps.png"
+            alt="apps icon"
+          />
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#portfolio-section" @click="selectApps">APPS</a>
+          <a
+            href="#portfolio-section"
+            @click="selectApps"
+          >APPS</a>
         </h3>
         <p>Have a look at some of my Projects.</p>
       </div>
     </div>
-    <div class="service-box" id="box-2">
-      <a href="#portfolio-section" @click="selectGames">
+    <div
+      id="box-2"
+      class="service-box"
+    >
+      <a
+        href="#portfolio-section"
+        @click="selectGames"
+      >
         <div class="img-container">
-          <img src="../assets/icons/controller.png" alt="games icon">
+          <img
+            src="../assets/icons/controller.png"
+            alt="games icon"
+          />
         </div>
       </a>
       <div class="service-content">
         <h3>
-          <a href="#portfolio-section" @click="selectGames">GAMES</a>
+          <a
+            href="#portfolio-section"
+            @click="selectGames"
+          >GAMES</a>
         </h3>
         <p>Have fun playing some of my Games.</p>
       </div>
     </div>
-    <div class="service-box" id="box-3">
+    <div
+      id="box-3"
+      class="service-box"
+    >
       <a @click="selectContact">
         <div class="img-container">
-          <img src="../assets/icons/mail.png" alt="contact icon">
+          <img
+            src="../assets/icons/mail.png"
+            alt="contact icon"
+          />
         </div>
       </a>
       <div class="service-content">

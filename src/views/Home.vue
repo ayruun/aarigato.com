@@ -1,15 +1,26 @@
 <template>
   <div>
-    <HomeStage @scroll-down="scrollToService"/>
-    <HomeService @select-apps="selectApps" @select-games="selectGames" @select-contact="scrollToContact" ref="homeService"/>
-    <HomePortfolio
+    <HomeStage
+      @scroll-down="scrollToService"
+    />
+    <HomeService 
+      ref="homeService"
       @select-apps="selectApps"
       @select-games="selectGames"
+      @select-contact="scrollToContact"
+    />
+    <HomePortfolio
       ref="portfolioSection"
       :tab="selectedTab"
+      @select-apps="selectApps"
+      @select-games="selectGames"
     />
-    <HomeContact ref="homeContact"/>
-    <HomeAbout ref="homeAbout"/>
+    <HomeContact
+      ref="homeContact"
+    />
+    <HomeAbout
+      ref="homeAbout"
+    />
   </div>
 </template>
 

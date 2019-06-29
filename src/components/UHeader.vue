@@ -1,30 +1,53 @@
 <template>
-  <div class="u-header" id="u-header">
+  <div
+    id="u-header"
+    class="u-header"
+  >
     <header class="header">
       <div class="logo">
         <a @click="goHome">
-          <img class="logo-img" src="../assets/logo.png" alt="aarigato logo">
+          <img
+            class="logo-img"
+            src="../assets/logo.png"
+            alt="aarigato logo"
+          />
         </a>
       </div>
 
-      <div class="burger-menu" @click="toggleMenu" v-click-outside="closeMenu">
-        <span></span>
+      <div
+        v-click-outside="closeMenu"
+        class="burger-menu"
+        @click="toggleMenu"
+      >
+        <span />
       </div>
 
-      <nav class="nav-bar" v-bind:class="{ active: isActive }">
+      <nav
+        class="nav-bar"
+        :class="{ active: isActive }"
+      >
         <ul>
           <li class="nav-li">
-            <a @click="goPortfolio" class="nav-links">
+            <a
+              class="nav-links"
+              @click="goPortfolio"
+            >
               <span>PORTFOLIO</span>
             </a>
           </li>
           <li class="nav-li">
-            <a @click="goContact" class="nav-links">
+            <a
+              class="nav-links"
+              @click="goContact"
+            >
               <span>CONTACT</span>
             </a>
           </li>
           <li class="nav-li">
-            <a @click="goAbout" class="nav-links">
+            <a
+              class="nav-links"
+              @click="goAbout"
+            >
               <span>ABOUT</span>
             </a>
           </li>

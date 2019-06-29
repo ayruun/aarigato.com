@@ -1,12 +1,20 @@
 <template>
-  <div class="home-about" id="home-about" ref="about">
-    <img src="../assets/images/portrait.png" alt="gato on the roof" class="about-img">
+  <div
+    id="home-about"
+    ref="about"
+    class="home-about"
+  >
+    <img
+      src="../assets/images/portrait.png"
+      alt="gato on the roof"
+      class="about-img"
+    />
     <div class="about-info">
       <h4>MOIN MOIN I'M AARON</h4>
       <p>
         I am a visual generalist whose specialty is working in 3 dimensions, always with one eye on the brand and the other one on the purpose of the design. I love good briefings and working conceptually and like to keep key elements in focus when others get stuck on details.
-        <br>
-        <br>Get in touch:
+        <br />
+        <br />Get in touch:
       </p>
 
       <a href="mailto:aarigato@icloud.com">

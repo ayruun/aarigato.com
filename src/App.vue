@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <UHeader @select-contact="selectContact" @select-about="selectAbout"/>
-    <router-view ref="homeView"/>
-    <UFooter/>
+    <UHeader
+      @select-contact="selectContact"
+      @select-about="selectAbout"
+    />
+    <router-view ref="homeView" />
+    <UFooter />
   </div>
 </template>
 
@@ -11,7 +14,7 @@ import UHeader from "./components/UHeader.vue";
 import UFooter from "./components/UFooter.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
     UHeader,
     UFooter

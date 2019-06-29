@@ -1,10 +1,15 @@
 <template>
-    <div class="footer-section">
-        <p class="copyright">
-            COPYRIGHT AARIGATO
-        </p>
-        <router-link :to="{ path: '/impressum/', hash: '#impressum-view' }" class="impressum">IMPRESSUM</router-link>
-    </div>
+  <div class="footer-section">
+    <p class="copyright">
+      COPYRIGHT AARIGATO
+    </p>
+    <router-link
+      :to="{ path: '/impressum/', hash: '#impressum-view' }"
+      class="impressum"
+    >
+      IMPRESSUM
+    </router-link>
+  </div>
 </template>
 
 <script>

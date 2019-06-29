@@ -1,7 +1,11 @@
 <template>
-    <div class="portfolio-orange-blossom">
-        <iframe class="iframe" src="https://www.aarigato.de/OrangeBlossomV1.1/" frameborder="0"></iframe>
-    </div>
+  <div class="portfolio-orange-blossom">
+    <iframe
+      class="iframe"
+      src="https://www.aarigato.de/OrangeBlossomV1.1/"
+      frameborder="0"
+    />
+  </div>
 </template>
 
 <script>

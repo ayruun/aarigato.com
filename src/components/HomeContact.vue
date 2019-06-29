@@ -1,23 +1,51 @@
 <template>
-  <div class="home-contact" id="home-contact" ref="contact">
-    <div class="contact-container" id="contact-container-1">
-      <div class="contact-box" id="contact-1">
-        <a href="https://github.com/ayruun" target="_blank">
+  <div
+    id="home-contact"
+    ref="contact"
+    class="home-contact"
+  >
+    <div
+      id="contact-container-1"
+      class="contact-container"
+    >
+      <div
+        id="contact-1"
+        class="contact-box"
+      >
+        <a
+          href="https://github.com/ayruun"
+          target="_blank"
+        >
           <div class="img-container">
-            <img src="../assets/icons/GitHubLogo.png" alt="GitHub Logo">
+            <img
+              src="../assets/icons/GitHubLogo.png"
+              alt="GitHub Logo"
+            />
           </div>
         </a>
         <div class="service-content">
           <h3>
-            <a href="https://github.com/ayruun" target="_blank">GitHub</a>
+            <a
+              href="https://github.com/ayruun"
+              target="_blank"
+            >GitHub</a>
           </h3>
           <p>Check out this Website and more.</p>
         </div>
       </div>
-      <div class="contact-box" id="contact-2">
-        <a href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/" target="_blank">
+      <div
+        id="contact-2"
+        class="contact-box"
+      >
+        <a
+          href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/"
+          target="_blank"
+        >
           <div class="img-container">
-            <img src="../assets/icons/LinkedInLogo.png" alt="LinkedIn Logo">
+            <img
+              src="../assets/icons/LinkedInLogo.png"
+              alt="LinkedIn Logo"
+            />
           </div>
         </a>
         <div class="service-content">
@@ -30,39 +58,76 @@
           <p>Feel free to contact me via LinkedIn.</p>
         </div>
       </div>
-      <div class="contact-box" id="contact-3">
-        <a href="https://www.freecodecamp.org/aarigato" target="_blank">
+      <div
+        id="contact-3"
+        class="contact-box"
+      >
+        <a
+          href="https://www.freecodecamp.org/aarigato"
+          target="_blank"
+        >
           <div class="img-container">
-            <img src="../assets/icons/freeCodeCampLogo.png" alt="freeCodeCamp Logo">
+            <img
+              src="../assets/icons/freeCodeCampLogo.png"
+              alt="freeCodeCamp Logo"
+            />
           </div>
         </a>
         <div class="service-content">
           <h3>
-            <a href="https://www.freecodecamp.org/aarigato" target="_blank">CodeCamp</a>
+            <a
+              href="https://www.freecodecamp.org/aarigato"
+              target="_blank"
+            >CodeCamp</a>
           </h3>
           <p>Have a look at my CodeCamp Profile.</p>
         </div>
       </div>
     </div>
 
-    <div class="contact-container" id="contact-container-2" v-if="fullContact">
-      <div class="contact-box" id="contact-1">
-        <a href="https://codepen.io/ayruun/" target="_blank">
+    <div
+      v-if="fullContact"
+      id="contact-container-2"
+      class="contact-container"
+    >
+      <div
+        id="contact-1"
+        class="contact-box"
+      >
+        <a
+          href="https://codepen.io/ayruun/"
+          target="_blank"
+        >
           <div class="img-container">
-            <img src="../assets/icons/CodePenLogo.png" alt="CodePen Logo">
+            <img
+              src="../assets/icons/CodePenLogo.png"
+              alt="CodePen Logo"
+            />
           </div>
         </a>
         <div class="service-content">
           <h3>
-            <a href="https://codepen.io/ayruun/" target="_blank">CodePen</a>
+            <a
+              href="https://codepen.io/ayruun/"
+              target="_blank"
+            >CodePen</a>
           </h3>
           <p>Check out my projects on Codepen.</p>
         </div>
       </div>
-      <div class="contact-box" id="contact-2">
-        <a href="https://www.xing.com/profile/Aaron_Behrendsen/" target="_blank">
+      <div
+        id="contact-2"
+        class="contact-box"
+      >
+        <a
+          href="https://www.xing.com/profile/Aaron_Behrendsen/"
+          target="_blank"
+        >
           <div class="img-container">
-            <img src="../assets/icons/xingLogo.png" alt="Xing Logo">
+            <img
+              src="../assets/icons/xingLogo.png"
+              alt="Xing Logo"
+            />
           </div>
         </a>
         <div class="service-content">
@@ -75,10 +140,19 @@
           <p>Feel free to contact me via Xing.</p>
         </div>
       </div>
-      <div class="contact-box" id="contact-3">
-        <a href="mailto:aarigato@icloud.com" target="_blank">
+      <div
+        id="contact-3"
+        class="contact-box"
+      >
+        <a
+          href="mailto:aarigato@icloud.com"
+          target="_blank"
+        >
           <div class="img-container">
-            <img src="../assets/icons/mail.png" alt="mail icon">
+            <img
+              src="../assets/icons/mail.png"
+              alt="mail icon"
+            />
           </div>
         </a>
         <div class="service-content">
@@ -91,7 +165,10 @@
     </div>
 
     <div class="more-btn-div">
-      <button class="button" @click="toggleShow">
+      <button
+        class="button"
+        @click="toggleShow"
+      >
         <span>{{ buttonText }}</span>
       </button>
     </div>

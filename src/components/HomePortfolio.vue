@@ -1,15 +1,26 @@
 <template>
-  <div class="portfolio-section" id="portfolio-section">
-    <HomePortfolioSlider ref="homePortfolioSlider" :tab="this.tab"/>
+  <div
+    id="portfolio-section"
+    class="portfolio-section"
+  >
+    <HomePortfolioSlider
+      ref="homePortfolioSlider"
+      :tab="tab"
+    />
     <div class="slider-tabs">
       <a
-        href="#portfolio-section"
         id="apps-tab"
         ref="appsTab"
+        href="#portfolio-section"
         @click="selectApps"
       >APPS</a>
       <p>//</p>
-      <a href="#portfolio-section" id="games-tab" ref="gamesTab" @click="selectGames">GAMES</a>
+      <a
+        id="games-tab"
+        ref="gamesTab"
+        href="#portfolio-section"
+        @click="selectGames"
+      >GAMES</a>
     </div>
   </div>
 </template>
