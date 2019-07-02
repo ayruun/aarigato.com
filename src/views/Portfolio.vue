@@ -5,15 +5,8 @@
 </template>
 
 <script>
-import { codePens } from "../assets/portfolio-slider-content.json";
-
 export default {
-  name: "Portfolio",
-  data() {
-    return {
-      codePens
-    };
-  }
+  name: "Portfolio"
 };
 </script>
 
