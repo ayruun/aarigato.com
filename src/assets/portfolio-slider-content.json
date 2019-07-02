@@ -1,6 +1,15 @@
 {
     "apps": [
         {
+            "id": "caesar-cipher",
+            "imgSrc": "caesar-cipher.jpg",
+            "imgAlt": "Caesar Cipher App Preview",
+            "headline": "Caesar Cipher",
+            "infoText": "Custom En-/Decryption App. Html, Css, JavaScript, Vue.js.",
+            "buttonLink": "portfolio/caesar-cipher",
+            "buttonText": "Encrypt Now!"
+        },
+        {
             "id": "apps0",
             "imgSrc": "portfolio-img-1.jpg",
             "imgAlt": "YouTube Playlist App Preview",

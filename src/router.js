@@ -5,6 +5,7 @@ import Portfolio from './views/Portfolio.vue';
 import PortfolioProject from './views/PortfolioProject.vue';
 import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
 import PortfolioCircleOfKings from './views/PortfolioCircleOfKings.vue';
+import CaesarCipher from './views/CaesarCipher.vue';
 import Impressum from './views/Impressum.vue';
 
 import { games, apps } from "./assets/portfolio-slider-content.json";
@@ -23,6 +24,10 @@ const routes = [
       {
         path: 'circle-of-kings',
         component: PortfolioCircleOfKings
+      },
+      {
+        path: 'caesar-cipher',
+        component: CaesarCipher
       },
       {
         path: ':project', 
