@@ -8,5 +8,5 @@
   status = 200
 [[redirects]]
   from = "/impressum/*"
-  to = "/impressum"
+  to = "/index.html"
   status = 200
