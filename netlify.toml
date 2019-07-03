@@ -4,9 +4,9 @@
   status = 200
 [[redirects]]
   from = "/portfolio/*"
-  to = "/portfolio/:splat"
+  to = "/portfolio/:project"
   status = 200
 [[redirects]]
   from = "/impressum/*"
-  to = "/impressum/:splat"
+  to = "/impressum"
   status = 200
