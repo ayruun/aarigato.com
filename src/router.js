@@ -18,19 +18,19 @@ const routes = [
     component: Portfolio,
     children: [
       {
-        path: 'orange-blossom',
+        path: '/orange-blossom',
         component: PortfolioOrangeBlossom
       },
       {
-        path: 'circle-of-kings',
+        path: '/circle-of-kings',
         component: PortfolioCircleOfKings
       },
       {
-        path: 'caesar-cipher',
+        path: '/caesar-cipher',
         component: CaesarCipher
       },
       {
-        path: ':project', 
+        path: '/:project', 
         component: PortfolioProject, 
         props: true,
         beforeEnter: (to, from, next) => {
