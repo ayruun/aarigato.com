@@ -12,7 +12,7 @@
     <div class="about-info">
       <h4>MOIN MOIN I'M AARON</h4>
       <p>
-        I am a visual generalist whose specialty is working in 3 dimensions, always with one eye on the brand and the other one on the purpose of the design. I love good briefings and working conceptually and like to keep key elements in focus when others get stuck on details.
+        I am a Frontend Web Developer from Hamburg, Germany with a background in visual Brand-Development, 3D-Design and CGI. Currently I am looking for a Frontend Job in Hamburg. Please feel free to contact me for feedback, job inquiries or simply to say hello.
         <br />
         <br />Get in touch:
       </p>
