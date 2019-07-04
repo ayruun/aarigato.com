@@ -101,4 +101,8 @@ export default {
   color: white;
   text-decoration: none;
 }
+
+.button:focus {
+  outline: none;
+}
 </style>
