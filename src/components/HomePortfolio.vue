@@ -52,7 +52,7 @@ export default {
 
 <style>
 .portfolio-section {
-  background: url("../assets/images/background.png");
+  background: url("https://www.aarigato.de/assets/images/background.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .welcome-section {
-  background: url("../assets/images/background.png");
+  background: url("https://www.aarigato.de/assets/images/background.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

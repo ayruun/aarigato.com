@@ -8,7 +8,7 @@
         <a @click="goHome">
           <img
             class="logo-img"
-            src="../assets/logo.png"
+            src="https://www.aarigato.de/assets/icons/aarigatoLogo.png"
             alt="aarigato logo"
           />
         </a>

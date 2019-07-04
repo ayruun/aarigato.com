@@ -18,7 +18,7 @@
         >
           <div class="img-container">
             <img
-              src="../assets/icons/GitHubLogo.png"
+              src="https://www.aarigato.de/assets/icons/GitHubLogo.png"
               alt="GitHub Logo"
             />
           </div>
@@ -43,7 +43,7 @@
         >
           <div class="img-container">
             <img
-              src="../assets/icons/LinkedInLogo.png"
+              src="https://www.aarigato.de/assets/icons/LinkedInLogo.png"
               alt="LinkedIn Logo"
             />
           </div>
@@ -68,7 +68,7 @@
         >
           <div class="img-container">
             <img
-              src="../assets/icons/freeCodeCampLogo.png"
+              src="https://www.aarigato.de/assets/icons/freeCodeCampLogo.png"
               alt="freeCodeCamp Logo"
             />
           </div>
@@ -100,7 +100,7 @@
         >
           <div class="img-container">
             <img
-              src="../assets/icons/CodePenLogo.png"
+              src="https://www.aarigato.de/assets/icons/CodePenLogo.png"
               alt="CodePen Logo"
             />
           </div>
@@ -125,7 +125,7 @@
         >
           <div class="img-container">
             <img
-              src="../assets/icons/xingLogo.png"
+              src="https://www.aarigato.de/assets/icons/xingLogo.png"
               alt="Xing Logo"
             />
           </div>
@@ -150,7 +150,7 @@
         >
           <div class="img-container">
             <img
-              src="../assets/icons/mail.png"
+              src="https://www.aarigato.de/assets/icons/mail.png"
               alt="mail icon"
             />
           </div>
