@@ -14,7 +14,7 @@
       >
         <div class="img-container">
           <img
-            src="../assets/icons/apps.png"
+            src="https://www.aarigato.de/assets/icons/apps.png"
             alt="apps icon"
           />
         </div>
@@ -39,7 +39,7 @@
       >
         <div class="img-container">
           <img
-            src="../assets/icons/controller.png"
+            src="https://www.aarigato.de/assets/icons/controller.png"
             alt="games icon"
           />
         </div>
@@ -61,7 +61,7 @@
       <a @click="selectContact">
         <div class="img-container">
           <img
-            src="../assets/icons/mail.png"
+            src="https://www.aarigato.de/assets/icons/mail.png"
             alt="contact icon"
           />
         </div>

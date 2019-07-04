@@ -1,7 +1,7 @@
 <template>
   <li class="content-slider-slide">
     <img
-      :src="require(`@/assets/images/${slide.imgSrc}`)"
+      :src="`https://www.aarigato.de/assets/images/${slide.imgSrc}`"
       :alt="slide.imgAlt"
       class="portfolio-img"
     />

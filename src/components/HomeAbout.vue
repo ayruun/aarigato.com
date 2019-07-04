@@ -5,7 +5,7 @@
     class="home-about"
   >
     <img
-      src="../assets/images/portrait.png"
+      src="https://www.aarigato.de/assets/images/portrait.png"
       alt="gato on the roof"
       class="about-img"
     />
@@ -33,7 +33,7 @@ export default {
 <style>
 .home-about {
   height: 100vh;
-  background: url("../assets/images/background.png");
+  background: url("https://www.aarigato.de/assets/images/background.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

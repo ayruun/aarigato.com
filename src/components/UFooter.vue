@@ -1,10 +1,10 @@
 <template>
   <div class="footer-section">
     <p class="copyright">
-      COPYRIGHT AARIGATO
+      &copy; COPYRIGHT AARIGATO
     </p>
     <router-link
-      :to="{ path: '/impressum/', hash: '#impressum-view' }"
+      :to="{ path: '/impressum/' }"
       class="impressum"
     >
       IMPRESSUM
