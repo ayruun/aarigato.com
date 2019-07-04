@@ -4,7 +4,7 @@
       &copy; COPYRIGHT AARIGATO
     </p>
     <router-link
-      :to="{ path: '/impressum/' }"
+      :to="{ path: '/impressum' }"
       class="impressum"
     >
       IMPRESSUM
