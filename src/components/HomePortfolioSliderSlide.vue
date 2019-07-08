@@ -8,11 +8,19 @@
     <div class="portfolio-info">
       <h4>{{ slide.headline }}</h4>
       <p>{{ slide.infoText }}</p>
-      <router-link :to="slide.buttonLink">
+
+      <a v-if="slide.externalLink" :href="slide.buttonLink" target="_blank">
+        <button class="button">
+          {{ slide.buttonText }}
+        </button>
+      </a>
+
+      <router-link v-else :to="slide.buttonLink">
         <button class="button">
           {{ slide.buttonText }}
         </button>
       </router-link>
+
     </div>
   </li>
 </template>
