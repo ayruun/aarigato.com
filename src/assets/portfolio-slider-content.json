@@ -10,28 +10,26 @@
             "buttonText": "Encrypt Now!"
         },
         {
-            "id": "apps1",
+            "id": "squad-tape",
+            "imgSrc": "squad-tape.jpg",
+            "imgAlt": "Squad Tape App Preview",
+            "headline": "Squad Tape",
+            "infoText": "Custom Spotify Playlist Visualization App. Html, Css, JavaScript, Vue.js.",
+            "buttonLink": "https://www.squadtape.com",
+            "buttonText": "Try Now!",
+            "externalLink": true
+        },
+        {
+            "id": "apps2",
             "imgSrc": "portfolio-img-1.jpg",
             "imgAlt": "YouTube Playlist App Preview",
             "headline": "Playlist App",
             "infoText": "Custom YouTube Playlist App. Html, Css, JavaScript.",
-            "buttonLink": "/apps1",
+            "buttonLink": "/apps2",
             "buttonText": "Listen Now!",
             "title": "myYouTubeApp",
             "src": "//codepen.io/ayruun/embed/xNqJMJ/?height=265&theme-id=dark&default-tab=js,result",
             "link": "https://codepen.io/ayruun/pen/xNqJMJ/"
-        },
-        {
-            "id": "apps2",
-            "imgSrc": "portfolio-img-2.jpg",
-            "imgAlt": "Tribute Page Preview",
-            "headline": "Tribute Page",
-            "infoText": "Tribute Page Excercise. Html, Css, JavaScript.",
-            "buttonLink": "/apps2",
-            "buttonText": "See in action!",
-            "title": "Fork Me! FCC: Test Suite Template",
-            "src": "//codepen.io/ayruun/embed/VOQWoe/?height=265&theme-id=dark&default-tab=js,result",
-            "link": "https://codepen.io/ayruun/pen/VOQWoe/"
         },
         {
             "id": "apps3",
