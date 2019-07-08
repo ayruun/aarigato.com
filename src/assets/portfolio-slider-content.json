@@ -1,15 +1,6 @@
 {
     "apps": [
         {
-            "id": "caesar-cipher",
-            "imgSrc": "caesar-cipher.jpg",
-            "imgAlt": "Caesar Cipher App Preview",
-            "headline": "Caesar Cipher",
-            "infoText": "Custom En-/Decryption App. Html, Css, JavaScript, Vue.js.",
-            "buttonLink": "/caesar-cipher",
-            "buttonText": "Encrypt Now!"
-        },
-        {
             "id": "squad-tape",
             "imgSrc": "squad-tape.jpg",
             "imgAlt": "Squad Tape App Preview",
@@ -18,6 +9,15 @@
             "buttonLink": "https://www.squadtape.com",
             "buttonText": "Try Now!",
             "externalLink": true
+        },
+        {
+            "id": "caesar-cipher",
+            "imgSrc": "caesar-cipher.jpg",
+            "imgAlt": "Caesar Cipher App Preview",
+            "headline": "Caesar Cipher",
+            "infoText": "Custom En-/Decryption App. Html, Css, JavaScript, Vue.js.",
+            "buttonLink": "/caesar-cipher",
+            "buttonText": "Encrypt Now!"
         },
         {
             "id": "apps2",
