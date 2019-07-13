@@ -16,7 +16,7 @@
             "imgAlt": "Caesar Cipher App Preview",
             "headline": "Caesar Cipher",
             "infoText": "Custom En-/Decryption App. Html, Css, JavaScript, Vue.js.",
-            "buttonLink": "/recaesar-cipher",
+            "buttonLink": "/caesar-cipher",
             "buttonText": "Encrypt Now!"
         },
         {
