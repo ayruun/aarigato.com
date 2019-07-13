@@ -25,7 +25,7 @@
             "imgAlt": "YouTube Playlist App Preview",
             "headline": "Playlist App",
             "infoText": "Custom YouTube Playlist App. Html, Css, JavaScript.",
-            "buttonLink": "portfolio/apps2",
+            "buttonLink": "/apps2",
             "buttonText": "Listen Now!",
             "title": "myYouTubeApp",
             "src": "//codepen.io/ayruun/embed/xNqJMJ/?height=265&theme-id=dark&default-tab=js,result",
@@ -37,7 +37,7 @@
             "imgAlt": "Portfolio App Preview",
             "headline": "Survey Form",
             "infoText": "Portfolio App Excercise. Html, Css, JavaScript.",
-            "buttonLink": "portfolio/apps3",
+            "buttonLink": "/apps3",
             "buttonText": "Have a look!",
             "title": "Fork Me! FCC: Test Suite Template",
             "src": "//codepen.io/ayruun/embed/arqLVy/?height=265&theme-id=dark&default-tab=html,result",
@@ -51,7 +51,7 @@
             "imgAlt": "Orange Blossom Preview Image",
             "headline": "Orange Blossom",
             "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
-            "buttonLink": "portfolio/orange-blossom",
+            "buttonLink": "/orange-blossom",
             "buttonText": "Play Now!"
         },
         {
@@ -60,7 +60,7 @@
             "imgAlt": "Circle of Kings Preview Image",
             "headline": "Circle of Kings",
             "infoText": "Created with C# in Unity3D. Sprites/Images created in Photoshop.",
-            "buttonLink": "portfolio/circle-of-kings",
+            "buttonLink": "/circle-of-kings",
             "buttonText": "Play Now!"
         }
     ]

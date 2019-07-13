@@ -15,7 +15,7 @@
         </button>
       </a>
 
-      <router-link v-else :to="slide.buttonLink" append>
+      <router-link v-else :to="{ path: `${slide.ButtonLink}` }" append>
         <button class="button">
           {{ slide.buttonText }}
         </button>
