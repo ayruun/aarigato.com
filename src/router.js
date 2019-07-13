@@ -27,7 +27,7 @@ const routes = [
         component: PortfolioCircleOfKings
       },
       {
-        path: 'caesar-cipher',
+        path: '/caesar-cipher',
         component: CaesarCipher
       },
       {
