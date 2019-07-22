@@ -11,8 +11,9 @@
         :slide="item"
       />
     </ul>
+
     <ul
-      v-else
+      v-else-if="tab === 'games'"
       ref="ul"
       class="content-slider-wrap"
     >
@@ -22,6 +23,19 @@
         :slide="item"
       />
     </ul>
+
+    <ul
+      v-else
+      ref="ul"
+      class="content-slider-wrap"
+    >
+      <HomePortfolioSliderSlide
+        v-for="item in renderings"
+        :key="item.id"
+        :slide="item"
+      />
+    </ul>
+
     <div class="slider-btns">
       <a
         id="prev"
@@ -43,7 +57,7 @@
 
 <script>
 import HomePortfolioSliderSlide from "./HomePortfolioSliderSlide";
-import { games, apps } from "../assets/portfolio-slider-content.json";
+import { games, apps, renderings } from "../assets/portfolio-slider-content.json";
 
 export default {
   name: "HomePortfolioSlider",
@@ -60,6 +74,7 @@ export default {
     return {
       apps,
       games,
+      renderings,
       slideCount: 0
     };
   },
@@ -77,6 +92,11 @@ export default {
         this.slideCount < this.games.length - 1
       ) {
         this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
+      } else if (
+        this.tab === "renderings" &&
+        this.slideCount < this.renderings.length - 1
+      ) {
+        this.$refs.ul.style.left = `-${(this.slideCount += 1)}00vw`;
       } else {
         this.$refs.ul.style.left = 0;
         this.slideCount = 0;
@@ -88,6 +108,9 @@ export default {
         this.$refs.ul.style.left = `-${this.slideCount}00vw`;
       } else if (this.slideCount == 0 && this.tab === "games") {
         this.slideCount = this.games.length - 1;
+        this.$refs.ul.style.left = `-${this.slideCount}00vw`;
+      } else if (this.slideCount == 0 && this.tab === "renderings") {
+        this.slideCount = this.renderings.length - 1;
         this.$refs.ul.style.left = `-${this.slideCount}00vw`;
       } else if (this.slideCount > 1) {
         this.$refs.ul.style.left = `-${(this.slideCount -= 1)}00vw`;

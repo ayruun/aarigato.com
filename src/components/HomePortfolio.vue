@@ -21,6 +21,13 @@
         href="#portfolio-section"
         @click="selectGames"
       >GAMES</a>
+      <p>//</p>
+      <a
+        id="renderings-tab"
+        ref="renderingsTab"
+        href="#portfolio-section"
+        @click="selectRenderings"
+      >3D</a>
     </div>
   </div>
 </template>
@@ -45,6 +52,9 @@ export default {
     },
     selectApps() {
       this.$emit("select-apps");
+    },
+    selectRenderings() {
+      this.$emit("select-renderings");
     }
   }
 };
@@ -81,6 +91,10 @@ export default {
 }
 
 #games-tab {
+  color: grey;
+}
+
+#renderings-tab {
   color: grey;
 }
 </style>

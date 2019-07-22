@@ -63,5 +63,34 @@
             "buttonLink": "/circle-of-kings",
             "buttonText": "Play Now!"
         }
+    ],
+    "renderings": [
+        {
+            "id": "interior-rendering",
+            "imgSrc": "interior-rendering.jpg",
+            "imgAlt": "Interior Preview Image",
+            "headline": "Interior Design",
+            "infoText": "Modelling, texturing and rendering in Cinema4D.",
+            "buttonLink": "/renderings",
+            "buttonText": "Have a look!"
+        },        
+        {
+            "id": "knife-designs",
+            "imgSrc": "knife-designs.jpg",
+            "imgAlt": "Knife Designs Preview Image",
+            "headline": "Knife Designs",
+            "infoText": "Modelling and rendering in Blender, texturing in Substance Painter.",
+            "buttonLink": "/renderings",
+            "buttonText": "Have a look!"
+        },        
+        {
+            "id": "art-experiments",
+            "imgSrc": "art-experiments-7.jpg",
+            "imgAlt": "Experiments Preview Image",
+            "headline": "Experiments",
+            "infoText": "Modelling, randomizing, texturing and rendering in Cinema4D.",
+            "buttonLink": "/renderings",
+            "buttonText": "Have a look!"
+        }
     ]
 }

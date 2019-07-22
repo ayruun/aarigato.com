@@ -14,6 +14,7 @@
       :tab="selectedTab"
       @select-apps="selectApps"
       @select-games="selectGames"
+      @select-renderings="selectRenderings"
     />
     <HomeContact
       ref="homeContact"
@@ -47,21 +48,33 @@ export default {
   },
   methods: {
     selectApps() {
-      if (this.selectedTab === "games") {
+      if (this.selectedTab !== "apps") {
         this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
         this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
         this.selectedTab = "apps";
         this.$refs.portfolioSection.$refs.appsTab.style.color = "white";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
+        this.$refs.portfolioSection.$refs.renderingsTab.style.color = "grey";
       }
     },
     selectGames() {
-      if (this.selectedTab === "apps") {
+      if (this.selectedTab !== "games") {
         this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
         this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
         this.selectedTab = "games";
         this.$refs.portfolioSection.$refs.gamesTab.style.color = "white";
         this.$refs.portfolioSection.$refs.appsTab.style.color = "grey";
+        this.$refs.portfolioSection.$refs.renderingsTab.style.color = "grey";
+      }
+    },
+    selectRenderings() {
+      if (this.selectedTab !== "renderings") {
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.slideCount = 0;
+        this.$refs.portfolioSection.$refs.homePortfolioSlider.$refs.ul.style.left = 0;
+        this.selectedTab = "renderings";
+        this.$refs.portfolioSection.$refs.renderingsTab.style.color = "white";
+        this.$refs.portfolioSection.$refs.appsTab.style.color = "grey";
+        this.$refs.portfolioSection.$refs.gamesTab.style.color = "grey";
       }
     },
     scrollToService() {
