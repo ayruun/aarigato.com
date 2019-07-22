@@ -5,6 +5,7 @@ import Portfolio from './views/Portfolio.vue';
 import PortfolioProject from './views/PortfolioProject.vue';
 import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
 import PortfolioCircleOfKings from './views/PortfolioCircleOfKings.vue';
+import Renderings from './views/Renderings.vue';
 import CaesarCipher from './views/CaesarCipher.vue';
 import Impressum from './views/Impressum.vue';
 
@@ -31,6 +32,10 @@ const routes = [
         component: CaesarCipher
       },
       {
+        path: '/renderings',
+        component: Renderings
+      },
+      {
         path: '/:project', 
         component: PortfolioProject, 
         props: true,
@@ -51,7 +56,7 @@ const routes = [
 
 export default new VueRouter({
   mode: 'history',
-  routes, // eigentlich routes: routes,
+  routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
         return savedPosition;
