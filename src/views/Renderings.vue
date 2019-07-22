@@ -1,7 +1,7 @@
 <template>
   <div class="renderings">
     <div class="renderings-content">
-      <span>This Site is currently under construction. Feel free to visit again soon!</span>
+      <p>This Site is currently under construction. Feel free to visit again soon!</p>
       <br />
       <router-link to="/">
         <button class="button">
@@ -45,8 +45,7 @@ export default {
   margin-top: 40px;
 }
 
-.renderings-content img {
-  height: 40vh;
-  width: auto;
+.renderings-content p {
+  margin: 0 10px;
 }
 </style>
