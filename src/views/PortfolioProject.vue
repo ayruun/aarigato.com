@@ -17,6 +17,11 @@
       <a href="https://codepen.io/ayruun">@ayruun</a>) on
       <a href="https://codepen.io">CodePen</a>.
     </iframe>
+
+    <div class="error">
+      <span>Please open this page on a larger device.</span>
+      <span>Bitte öffne die Seite auf einem größeren Gerät.</span>
+    </div>
   </div>
 </template>
 
@@ -55,5 +60,25 @@ export default {
 .iframe {
   margin-top: 80px;
   height: 100%;
+  display: block;
+}
+
+.error {
+  display: none;
+}
+
+@media (max-width: 655px), (max-height: 830px) {
+  .iframe {
+    display: none;
+  }
+
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 </style>
