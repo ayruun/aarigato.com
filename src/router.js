@@ -7,6 +7,7 @@ import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
 import PortfolioCircleOfKings from './views/PortfolioCircleOfKings.vue';
 import Renderings from './views/Renderings.vue';
 import CaesarCipher from './views/CaesarCipher.vue';
+import StadtLandFluss from './views/StadtLandFluss.vue';
 import Impressum from './views/Impressum.vue';
 
 import { games, apps } from "./assets/portfolio-slider-content.json";
@@ -30,6 +31,10 @@ const routes = [
       {
         path: '/caesar-cipher',
         component: CaesarCipher
+      },
+      {
+        path: '/stadt-land-fluss',
+        component: StadtLandFluss
       },
       {
         path: '/renderings',
