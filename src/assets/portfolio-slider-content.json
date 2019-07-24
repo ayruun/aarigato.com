@@ -20,20 +20,17 @@
             "buttonText": "Encrypt Now!"
         },
         {
-            "id": "apps2",
-            "imgSrc": "portfolio-img-1.jpg",
-            "imgAlt": "YouTube Playlist App Preview",
-            "headline": "Playlist App",
-            "infoText": "Custom YouTube Playlist App. Html, Css, JavaScript.",
-            "buttonLink": "/apps2",
-            "buttonText": "Listen Now!",
-            "title": "myYouTubeApp",
-            "src": "//codepen.io/ayruun/embed/xNqJMJ/?height=265&theme-id=dark&default-tab=js,result",
-            "link": "https://codepen.io/ayruun/pen/xNqJMJ/"
+            "id": "stadt-land-fluss",
+            "imgSrc": "stadt-land-fluss.jpg",
+            "imgAlt": "Stadt Land Fluss App Preview",
+            "headline": "Stadt Land Fluss",
+            "infoText": "Customize your own Stadt-Land-Fluss Game. Html, Css, JavaScript, Vue.js.",
+            "buttonLink": "/stadt-land-fluss",
+            "buttonText": "Customize Now!"
         },
         {
             "id": "apps3",
-            "imgSrc": "portfolio-img-3.jpg",
+            "imgSrc": "survey-form.jpg",
             "imgAlt": "Portfolio App Preview",
             "headline": "Survey Form",
             "infoText": "Portfolio App Excercise. Html, Css, JavaScript.",
