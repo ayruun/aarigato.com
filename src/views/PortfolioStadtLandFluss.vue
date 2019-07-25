@@ -5,6 +5,7 @@
       frameborder="0"
     />
     <div class="error">
+      <i class="material-icons">report_problem</i>
       <span>Please open this page on a larger device.</span>
       <span>Bitte öffne die Seite auf einem größeren Gerät.</span>
     </div>
