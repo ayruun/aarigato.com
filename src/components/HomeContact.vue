@@ -30,7 +30,7 @@
               target="_blank"
             >GitHub</a>
           </h3>
-          <p>Check out this Website and more.</p>
+          <p>Check out this Website and other projects.</p>
         </div>
       </div>
       <div
@@ -38,12 +38,12 @@
         class="contact-box"
       >
         <a
-          href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/"
+          href="https://www.xing.com/profile/Aaron_Behrendsen/"
           target="_blank"
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/LinkedInLogo.png"
+              src="https://www.aarigato.de/assets/icons/xingLogo.png"
               alt="LinkedIn Logo"
             />
           </div>
@@ -51,11 +51,11 @@
         <div class="service-content">
           <h3>
             <a
-              href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/"
+              href="https://www.xing.com/profile/Aaron_Behrendsen/"
               target="_blank"
-            >LinkedIn</a>
+            >Xing</a>
           </h3>
-          <p>Feel free to contact me via LinkedIn.</p>
+          <p>Feel free to contact me via Xing.</p>
         </div>
       </div>
       <div
@@ -120,24 +120,24 @@
         class="contact-box"
       >
         <a
-          href="https://www.xing.com/profile/Aaron_Behrendsen/"
+          href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/"
           target="_blank"
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/xingLogo.png"
-              alt="Xing Logo"
+              src="https://www.aarigato.de/assets/icons/LinkedInLogo.png"
+              alt="LinkedIn Logo"
             />
           </div>
         </a>
         <div class="service-content">
           <h3>
             <a
-              href="https://www.xing.com/profile/Aaron_Behrendsen/"
+              href="https://www.linkedin.com/in/aaron-behrendsen-449a25182/"
               target="_blank"
-            >Xing</a>
+            >LinkedIn</a>
           </h3>
-          <p>Feel free to contact me via Xing.</p>
+          <p>Feel free to contact me via LinkedIn.</p>
         </div>
       </div>
       <div
