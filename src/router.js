@@ -6,7 +6,8 @@ import PortfolioProject from './views/PortfolioProject.vue';
 import PortfolioOrangeBlossom from './views/PortfolioOrangeBlossom.vue';
 import PortfolioCircleOfKings from './views/PortfolioCircleOfKings.vue';
 import Renderings from './views/Renderings.vue';
-import CaesarCipher from './views/CaesarCipher.vue';
+import PortfolioCaesarCipher from './views/PortfolioCaesarCipher.vue';
+import PortfolioStadtLandFluss from './views/PortfolioStadtLandFluss.vue';
 import Impressum from './views/Impressum.vue';
 
 import { games, apps } from "./assets/portfolio-slider-content.json";
@@ -29,7 +30,11 @@ const routes = [
       },
       {
         path: '/caesar-cipher',
-        component: CaesarCipher
+        component: PortfolioCaesarCipher
+      },
+      {
+        path: '/stadt-land-fluss',
+        component: PortfolioStadtLandFluss
       },
       {
         path: '/renderings',

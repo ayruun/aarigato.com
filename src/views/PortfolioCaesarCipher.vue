@@ -1,8 +1,7 @@
 <template>
-  <div class="portfolio-orange-blossom">
+  <div>
     <iframe
-      class="iframe"
-      src="https://www.aarigato.de/OrangeBlossomV1.1/"
+      src="https://www.aarigato.de/myApps/CaesarCipher/"
       frameborder="0"
     />
     <div class="error">
@@ -14,30 +13,22 @@
 </template>
 
 <script>
-export default {
-  name: "PortfolioOrangeBlossom"
-};
+export default {};
 </script>
 
-<style>
-.portfolio-orange-blossom {
-  height: 100vh;
+<style scoped>
+iframe {
+  display: block;
   width: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
 .error {
   display: none;
 }
 
-@media (max-width: 655px), (max-height: 830px) {
-  .portfolio-orange-blossom {
-    background: var(--accent);
-  }
 
+@media (max-width: 655px), (max-height: 830px) {
   iframe {
     display: none;
   }
