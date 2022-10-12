@@ -2,7 +2,7 @@
   <div class="welcome-section">
     <h1>WELCOME TO</h1>
     <h2>AARIGATO</h2>
-    <h3>Have a look at my Apps-Portfolio and have fun playing my Games!</h3>
+    <h3>Contents of the page are currently updated. Feel free to contact me anyways!</h3>
     <div class="start-btn">
       <a @click="scrollDown">
         <i class="material-icons">keyboard_arrow_down</i>

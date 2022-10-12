@@ -3,19 +3,19 @@
     <HomeStage
       @scroll-down="scrollToService"
     />
-    <HomeService 
+    <!-- <HomeService 
       ref="homeService"
       @select-apps="selectApps"
       @select-games="selectGames"
       @select-contact="scrollToContact"
-    />
-    <HomePortfolio
+    /> -->
+    <!-- <HomePortfolio
       ref="portfolioSection"
       :tab="selectedTab"
       @select-apps="selectApps"
       @select-games="selectGames"
       @select-renderings="selectRenderings"
-    />
+    /> -->
     <HomeContact
       ref="homeContact"
     />
@@ -27,8 +27,8 @@
 
 <script>
 import HomeStage from "../components/HomeStage.vue";
-import HomeService from "../components/HomeService.vue";
-import HomePortfolio from "../components/HomePortfolio.vue";
+// import HomeService from "../components/HomeService.vue";
+// import HomePortfolio from "../components/HomePortfolio.vue";
 import HomeAbout from "../components/HomeAbout.vue";
 import HomeContact from "../components/HomeContact.vue";
 
@@ -36,8 +36,8 @@ export default {
   name: "Home",
   components: {
     HomeStage,
-    HomeService,
-    HomePortfolio,
+    // HomeService,
+    // HomePortfolio,
     HomeContact,
     HomeAbout
   },

@@ -5,14 +5,14 @@
     class="home-about"
   >
     <img
-      src="https://www.aarigato.de/assets/images/portrait.png"
+      src="@/assets/img/portrait.png"
       alt="gato on the roof"
       class="about-img"
     />
     <div class="about-info">
       <h4>MOIN MOIN I'M AARON</h4>
       <p>
-        I am a Frontend Web Developer from Hamburg, Germany with a background in visual Brand-Development, 3D-Design and CGI. Currently I am looking for a Frontend Job in Hamburg. Please feel free to contact me for feedback, job inquiries or simply to say hello.
+        I am a Frontend Web Developer from Hamburg, Germany with a background in visual Brand-Development, 3D-Design and CGI. For further inforatmions please have a look at my xing profile. Please feel free to contact me for feedback, job inquiries or simply to say hello.
         <br />
         <br />Get in touch:
       </p>
@@ -33,7 +33,7 @@ export default {
 <style>
 .home-about {
   height: 100vh;
-  background: url("https://www.aarigato.de/assets/images/background.png");
+  background: url("../assets/img/background.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

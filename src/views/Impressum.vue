@@ -10,8 +10,8 @@
         <p>Angaben gemäß § 5 TMG</p>
         <br />
         <p>Aaron Behrendsen</p>  
-        <p>Susannenstraße 6</p>   
-        <p>20357 Hamburg</p>
+        <p>Bahrenfelder Steindamm 68</p>   
+        <p>22761 Hamburg</p>
 
         <h2>Vertreten durch: </h2>
         <p>Aaron Behrendsen</p>

@@ -18,7 +18,7 @@
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/GitHubLogo.png"
+              src="@/assets/img/GitHubLogo.png"
               alt="GitHub Logo"
             />
           </div>
@@ -43,7 +43,7 @@
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/xingLogo.png"
+              src="@/assets/img/xingLogo.png"
               alt="LinkedIn Logo"
             />
           </div>
@@ -68,7 +68,7 @@
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/freeCodeCampLogo.png"
+              src="@/assets/img/freeCodeCampLogo.png"
               alt="freeCodeCamp Logo"
             />
           </div>
@@ -86,7 +86,6 @@
     </div>
 
     <div
-      v-if="fullContact"
       id="contact-container-2"
       class="contact-container"
     >
@@ -100,7 +99,7 @@
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/CodePenLogo.png"
+              src="@/assets/img/CodePenLogo.png"
               alt="CodePen Logo"
             />
           </div>
@@ -125,7 +124,7 @@
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/LinkedInLogo.png"
+              src="@/assets/img/LinkedInLogo.png"
               alt="LinkedIn Logo"
             />
           </div>
@@ -150,7 +149,7 @@
         >
           <div class="img-container">
             <img
-              src="https://www.aarigato.de/assets/icons/mail.png"
+              src="@/assets/img/mail.png"
               alt="mail icon"
             />
           </div>
@@ -164,14 +163,14 @@
       </div>
     </div>
 
-    <div class="more-btn-div">
+    <!-- <div class="more-btn-div">
       <button
         class="button"
         @click="toggleShow"
       >
         <span>{{ buttonText }}</span>
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -200,10 +199,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home-contact {
   background-color: white;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,6 +236,27 @@ export default {
   color: black;
   font-weight: 100;
   cursor: pointer;
+}
+
+.img-container {
+  background-color: var(--accent);
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container:hover {
+  background-color: var(--accent-hover);
+}
+
+.img-container img {
+  width: 50%;
+  height: auto;
 }
 
 @media (max-width: 633px) {

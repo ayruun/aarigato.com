@@ -27,14 +27,14 @@
         :class="{ active: isActive }"
       >
         <ul>
-          <li class="nav-li">
+          <!-- <li class="nav-li">
             <a
               class="nav-links"
               @click="goPortfolio"
             >
               <span>PORTFOLIO</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-li">
             <a
               class="nav-links"
